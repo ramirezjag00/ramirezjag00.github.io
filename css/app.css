@@ -29,8 +29,8 @@
     z-index: -99; }
 
   .rowImageMobile2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/BALINGASAG2.jpg");
-    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG");
+    height: 70vh;
     max-width: 100%;
     width: 100vw;
     background-position: center;
@@ -139,17 +139,12 @@
   hr.projHR {
     border: 2px solid #00b454; }
 
-  footer div.row {
-    position: relative !important;
-    clear: both !important;
-    text-align: center !important;
-    column-width: 0em; }
-
   footer div.footer {
     color: #303030;
     position: relative;
     clear: both;
-    text-align: center; }
+    text-align: center;
+    margin-top: 10vh; }
 
   #scicLogo {
     width: 2em;
@@ -179,7 +174,124 @@
     border-radius: 10px; }
 
   #myBtn:hover {
-    background-color: #a2e7c1; } }
+    background-color: #a2e7c1; }
+
+  .projectLinks {
+    margin-bottom: 5vh; }
+
+  .projectLinks div {
+    display: inline;
+    margin-right: 3vw; }
+
+  .projectLinks div a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.1s linear 0.25s; }
+
+  .projectLinks div a:hover {
+    color: #00b454; }
+
+  #ongoing, #civil, #plant, #building {
+    display: none; }
+
+  .inactive {
+    color: #303030; }
+
+  .active {
+    color: #00b454; }
+
+  .rowImage3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg");
+    height: 60vh;
+    max-width: 100%;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -99;
+    margin-bottom: 10vh; }
+
+  .projH3 {
+    color: #ffffff;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    position: absolute;
+    font-weight: bolder;
+    content: "";
+    clear: both;
+    display: table; }
+
+  .projHR3 {
+    border: 2px solid #00b454;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    position: absolute; }
+
+  main {
+    margin-bottom: 5vh; }
+
+  .companyPromise {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5 em;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    position: absolute;
+    content: "";
+    clear: both;
+    display: table;
+    padding: 0 5vw; }
+
+  .main-gallery {
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
+
+  .gallery-cell {
+    width: 100%; }
+
+  .testimonial {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 10vh auto;
+    padding: 0 20px; }
+
+  .testimonial-avatar {
+    width: 100px;
+    border-radius: 50%; }
+
+  .testimonial-quote {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0; }
+
+  .testimonial-author {
+    display: block;
+    font-weight: 800;
+    color: #00b454; }
+
+  .flickity-page-dots {
+    bottom: 25px; }
+
+  .dot.is-selected {
+    background: #00b454 !important; }
+
+  hr.projHR4 {
+    border: 2px solid #00b454;
+    margin-bottom: 10vh; }
+
+  ul.noteList {
+    list-style-type: none; }
+
+  ul.noteList li:before {
+    content: "—";
+    position: absolute;
+    margin-left: -20px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .button_container span {
     background: #a2e7c1 !important; }
@@ -207,8 +319,8 @@
     z-index: -99; }
 
   .rowImageMobile2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/BALINGASAG2.jpg");
-    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG");
+    height: 70vh;
     max-width: 100%;
     width: 100vw;
     background-position: center;
@@ -317,17 +429,12 @@
   hr.projHR {
     border: 2px solid #00b454; }
 
-  footer div.row {
-    position: relative !important;
-    clear: both !important;
-    text-align: center !important;
-    column-width: 0em; }
-
   footer div.footer {
     color: #303030;
     position: relative;
     clear: both;
-    text-align: center; }
+    text-align: center;
+    margin-top: 10vh; }
 
   #scicLogo {
     width: 2em;
@@ -357,7 +464,124 @@
     border-radius: 10px; }
 
   #myBtn:hover {
-    background-color: #a2e7c1; } }
+    background-color: #a2e7c1; }
+
+  .projectLinks {
+    margin-bottom: 5vh; }
+
+  .projectLinks div {
+    display: inline;
+    margin-right: 3vw; }
+
+  .projectLinks div a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.1s linear 0.25s; }
+
+  .projectLinks div a:hover {
+    color: #00b454; }
+
+  #ongoing, #civil, #plant, #building {
+    display: none; }
+
+  .inactive {
+    color: #303030; }
+
+  .active {
+    color: #00b454; }
+
+  .rowImage3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg");
+    height: 60vh;
+    max-width: 100%;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -99;
+    margin-bottom: 10vh; }
+
+  .projH3 {
+    color: #ffffff;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    position: absolute;
+    font-weight: bolder;
+    content: "";
+    clear: both;
+    display: table; }
+
+  .projHR3 {
+    border: 2px solid #00b454;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    position: absolute; }
+
+  main {
+    margin-bottom: 5vh; }
+
+  .companyPromise {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5 em;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    position: absolute;
+    content: "";
+    clear: both;
+    display: table;
+    padding: 0 5vw; }
+
+  .main-gallery {
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
+
+  .gallery-cell {
+    width: 100%; }
+
+  .testimonial {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 10vh auto;
+    padding: 0 20px; }
+
+  .testimonial-avatar {
+    width: 100px;
+    border-radius: 50%; }
+
+  .testimonial-quote {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0; }
+
+  .testimonial-author {
+    display: block;
+    font-weight: 800;
+    color: #00b454; }
+
+  .flickity-page-dots {
+    bottom: 25px; }
+
+  .dot.is-selected {
+    background: #00b454 !important; }
+
+  hr.projHR4 {
+    border: 2px solid #00b454;
+    margin-bottom: 10vh; }
+
+  ul.noteList {
+    list-style-type: none; }
+
+  ul.noteList li:before {
+    content: "—";
+    position: absolute;
+    margin-left: -20px; } }
 @media only screen and (min-width: 800px) and (orientation: portrait) {
   .button_container span {
     background: #a2e7c1 !important; }
@@ -385,8 +609,8 @@
     z-index: -99; }
 
   .rowImageMobile2 {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/BALINGASAG2.jpg");
-    height: 50vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG");
+    height: 70vh;
     max-width: 100%;
     width: 100vw;
     background-position: center;
@@ -495,17 +719,12 @@
   hr.projHR {
     border: 2px solid #00b454; }
 
-  footer div.row {
-    position: relative !important;
-    clear: both !important;
-    text-align: center !important;
-    column-width: 0em; }
-
   footer div.footer {
     color: #303030;
     position: relative;
     clear: both;
-    text-align: center; }
+    text-align: center;
+    margin-top: 10vh; }
 
   #scicLogo {
     width: 2em;
@@ -535,7 +754,124 @@
     border-radius: 10px; }
 
   #myBtn:hover {
-    background-color: #a2e7c1; } }
+    background-color: #a2e7c1; }
+
+  .projectLinks {
+    margin-bottom: 5vh; }
+
+  .projectLinks div {
+    display: inline;
+    margin-right: 3vw; }
+
+  .projectLinks div a {
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.1s linear 0.25s; }
+
+  .projectLinks div a:hover {
+    color: #00b454; }
+
+  #ongoing, #civil, #plant, #building {
+    display: none; }
+
+  .inactive {
+    color: #303030; }
+
+  .active {
+    color: #00b454; }
+
+  .rowImage3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg");
+    height: 60vh;
+    max-width: 100%;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -99;
+    margin-bottom: 10vh; }
+
+  .projH3 {
+    color: #ffffff;
+    text-align: center;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    position: absolute;
+    font-weight: bolder;
+    content: "";
+    clear: both;
+    display: table; }
+
+  .projHR3 {
+    border: 2px solid #00b454;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    position: absolute; }
+
+  main {
+    margin-bottom: 5vh; }
+
+  .companyPromise {
+    text-align: center;
+    color: #ffffff;
+    font-size: 1.5 em;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    position: absolute;
+    content: "";
+    clear: both;
+    display: table;
+    padding: 0 5vw; }
+
+  .main-gallery {
+    background: #fff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
+
+  .gallery-cell {
+    width: 100%; }
+
+  .testimonial {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 10vh auto;
+    padding: 0 20px; }
+
+  .testimonial-avatar {
+    width: 100px;
+    border-radius: 50%; }
+
+  .testimonial-quote {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    padding: 10px 0; }
+
+  .testimonial-author {
+    display: block;
+    font-weight: 800;
+    color: #00b454; }
+
+  .flickity-page-dots {
+    bottom: 25px; }
+
+  .dot.is-selected {
+    background: #00b454 !important; }
+
+  hr.projHR4 {
+    border: 2px solid #00b454;
+    margin-bottom: 10vh; }
+
+  ul.noteList {
+    list-style-type: none; }
+
+  ul.noteList li:before {
+    content: "—";
+    position: absolute;
+    margin-left: -20px; } }
 @media only screen and (min-width: 1280px) and (orientation: landscape) {
   .rowImageMobile2 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG");
@@ -610,16 +946,12 @@
     background: transparent;
     border: #00b454 1px solid; }
 
-  footer div.row {
-    color: #ffffff;
-    position: absolute; }
-
   footer div.footer {
     color: #303030;
     position: relative;
     clear: both;
     text-align: center;
-    margin-top: 5vh; }
+    margin-top: 10vh; }
 
   footer div.footer2 {
     color: #ffffff;
@@ -666,7 +998,7 @@
     border: 2px solid #00b454;
     margin-bottom: 10%; }
 
-  #whoWeAre, .rowImageMobile, .rowMobile, .imageText {
+  #whoWeAre, .rowImageMobile, .rowMobile {
     display: none; }
 
   .projectLinks {
@@ -735,6 +1067,9 @@
     left: 50%;
     transform: translate(-50%, -40%);
     position: absolute; }
+
+  main {
+    margin-bottom: 5vh; }
 
   .companyPromise {
     text-align: center;
@@ -864,16 +1199,12 @@
     background: transparent;
     border: #00b454 1px solid; }
 
-  footer div.row {
-    color: #ffffff;
-    position: absolute; }
-
   footer div.footer {
     color: #303030;
     position: relative;
     clear: both;
     text-align: center;
-    margin-top: 5vh; }
+    margin-top: 10vh; }
 
   footer div.footer2 {
     color: #ffffff;
@@ -920,7 +1251,7 @@
     border: 2px solid #00b454;
     margin-bottom: 10%; }
 
-  #whoWeAre, .rowImageMobile, .rowMobile, .imageText {
+  #whoWeAre, .rowImageMobile, .rowMobile {
     display: none; }
 
   .projectLinks {
@@ -989,6 +1320,9 @@
     left: 50%;
     transform: translate(-50%, -40%);
     position: absolute; }
+
+  main {
+    margin-bottom: 5vh; }
 
   .companyPromise {
     text-align: center;
