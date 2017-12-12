@@ -39,9 +39,6 @@
     position: relative;
     z-index: -99; }
 
-  .caption {
-    text-align: center; }
-
   .thumbnail {
     text-decoration: none;
     border: none;
@@ -329,9 +326,6 @@
     position: relative;
     z-index: -99; }
 
-  .caption {
-    text-align: center; }
-
   .thumbnail {
     text-decoration: none;
     border: none;
@@ -618,9 +612,6 @@
     background-size: cover;
     position: relative;
     z-index: -99; }
-
-  .caption {
-    text-align: center; }
 
   .thumbnail {
     text-decoration: none;
@@ -966,9 +957,6 @@
     margin-left: 10px;
     margin-top: 10px; }
 
-  .caption {
-    text-align: center; }
-
   .thumbnail {
     border-radius: 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1218,9 +1206,6 @@
     display: inline-block;
     margin-left: 10px;
     margin-top: 10px; }
-
-  .caption {
-    text-align: center; }
 
   .thumbnail {
     border-radius: 0;
