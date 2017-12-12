@@ -27,6 +27,7 @@ $(window).scroll(function() {
 	});
 });
 
+//PROJECTS
 //internal links to change contents
 $(document).ready(function() {
 
@@ -63,6 +64,47 @@ $(document).ready(function() {
 
 	$('.proj4').click(function() {
 		$('.projectContainer').html($('#building').html());
+	})
+
+}); //end of ready
+
+//CAREERS
+//internal links to change contents
+$(document).ready(function() {
+
+	//make alljobs class default
+	$('.careerContainer').html($('#allJobs').html());
+	if ($('.career1').is("active"))
+		$('.button-car').not('.career1').removeClass('active');
+	else
+		$('.career1').addClass('active');
+	$('.button-car').not('.career1').removeClass('active');
+
+
+     //active link on-click
+     $('.button-car').click(function() {
+     	if ($(this).is("active"))
+     		$('.button-car').not(this).removeClass('active');
+     	else
+     		$(this).addClass('active');
+     	$('.button-car').not(this).removeClass('active');
+     });
+
+	//show images of specific link category on-click
+	$('.career1').click(function() {
+		$('.careerContainer').html($('#allJobs').html());
+	})
+
+	$('.career2').click(function() {
+		$('.careerContainer').html($('#professionals').html());
+	})
+
+	$('.career3').click(function() {
+		$('.careerContainer').html($('#graduates').html());
+	})
+
+	$('.career4').click(function() {
+		$('.careerContainer').html($('#skilledCraft').html());
 	})
 
 }); //end of ready

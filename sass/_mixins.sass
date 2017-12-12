@@ -1,7 +1,7 @@
 /* GLOBAL MIXINS */
 
 /* MIXINS */
-=phoneAndiPad($overlayFont, $fontText, $colWidth, $top, $yMargin)
+=phoneAndiPad($overlayFont, $fontText, $colWidth, $top, $yMargin, $display)
 	.button_container span 
 		background: #a2e7c1 !important
 
@@ -288,6 +288,99 @@
 		position: absolute
 		margin-left: -20px
 
+	.rowImage4
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/careers-page-header copy.jpg")
+		height: 80vh
+		max-width: 100%
+		width: 100vw
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		z-index: -99
+
+	h1.projH5
+		text-align: center
+		margin-top: 10vh
+
+	hr.projHR5
+		border: 2px solid #00b454
+		margin-bottom: 8vh
+
+
+	div.careersText
+		text-align: center
+		padding: 0 10vw
+		margin-bottom: 7vh
+		font-weight: bold
+
+	.rowImage5
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/mission copy.jpg")
+		height: 70vh
+		max-width: 100%
+		width: 100vw
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		z-index: -99
+		margin-bottom: 10vh
+
+	.rowImage6
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/work copy.jpg")
+		height: 70vh
+		max-width: 100%
+		width: 100vw
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		z-index: -99
+		margin-bottom: 10vh
+
+	.careerLinks
+		margin-bottom: 5vh
+		text-align: center
+
+	.careerLinks div
+		display: $display
+		margin-right: 4vw
+
+	.careerLinks div a
+		text-decoration: none
+		font-weight: bold
+		transition: color 0.1s linear 0.25s
+	
+	.careerLinks div a:hover
+		color: #00b454
+
+	#allJobs, #professionals, #graduates, #skilledCraft
+		display: none
+
+	.inactive
+		color: #303030
+
+	.active
+		color: #00b454
+
+	// .table td
+	// 	border-top: 1px solid #ccc
+
+	.table th
+		border: none !important
+
+	.table td, .table th
+		padding: 10px
+		border-top-width: 100%
+
+	.table
+		margin-left: auto
+		margin-right: auto
+		width: 0%
+
+	.contact
+		text-align: center
+
 
 =desktopAndTabLandScape($overlayFont)
 	
@@ -543,17 +636,109 @@
 		position: absolute
 		margin-left: -20px
 
+	.rowImage4
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/careers-page-header copy.jpg")
+		height: 80vh
+		max-width: 100%
+		width: 100vw
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		z-index: -99
+
+	h1.projH5
+		text-align: center
+		margin-top: 10vh
+
+	hr.projHR5
+		border: 2px solid #00b454
+		margin-bottom: 7vh
+
+
+	div.careersText
+		text-align: center
+		padding: 0 10vw
+		margin-bottom: 3vh
+		font-weight: bold
+
+	.rowImage5
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/mission copy.jpg")
+		height: 70vh
+		max-width: 100%
+		width: 100vw
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		z-index: -99
+		margin-bottom: 10vh
+
+	.rowImage6
+		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/work copy.jpg")
+		height: 70vh
+		max-width: 100%
+		width: 100vw
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		z-index: -99
+		margin-bottom: 10vh
+
+	.careerLinks
+		margin-bottom: 5vh
+		text-align: center
+
+	.careerLinks div
+		display: inline
+		margin-right: 3vw
+
+	.careerLinks div a
+		text-decoration: none
+		font-weight: bold
+		transition: color 0.1s linear 0.25s
+	
+	.careerLinks div a:hover
+		color: #00b454
+
+	#allJobs, #professionals, #graduates, #skilledCraft
+		display: none
+
+	.inactive
+		color: #303030
+
+	.active
+		color: #00b454
+
+	// .table td
+	// 	border-top: 1px solid #ccc
+
+	.table th
+		border: none !important
+
+	.table td, .table th
+		padding: 10px
+		border-top-width: 100%
+
+	.table
+		margin-left: auto
+		margin-right: auto
+		width: 0%
+
+	.contact
+		text-align: center
 
 
 /* MEDIA QUERY */
 @media only screen and (max-width: 767px)
-	+phoneAndiPad(2em, 1.5em, 100%, 70%, -70%)
+	+phoneAndiPad(2em, 1.5em, 100%, 70%, -70%, block)
 	
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-	+phoneAndiPad(3em, 2.5em, 100%, 70%, -70%)
+	+phoneAndiPad(3em, 2.5em, 100%, 70%, -70%, inline)
 
 @media only screen and (min-width: 800px) and (orientation: portrait)
-	+phoneAndiPad(5em, 2.5em, 100%, 60%, -60%)
+	+phoneAndiPad(5em, 2.5em, 100%, 60%, -60%, inline)
 
 @media only screen and (min-width: 1280px) and (orientation: landscape)
 	+desktopAndTabLandScape(1.5em)
