@@ -33,11 +33,10 @@
 		<div class="overlay" id="overlay">
 			<nav class="overlay-menu">
 				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="projects.html">PROJECTS</a></li>
-					<li><a href="#">UPDATES</a></li>
-					<li><a href="careers.html">CAREERS</a></li>
-					<li><a href="#">CONTACTS</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html" class=".projects">Projects</a></li>
+					<li><a href="careers.html">Careers</a></li>
+					<li><a href="careers.html#contacts">Contact Us</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -51,15 +50,13 @@
 			</div>
 			<!--  -->
 			<div class="rowProjects">
-				<a class="btn" href="projects.html#projects">ONGOING PROJECTS</a>
-				<a class="btn" href="projects.html#projects">CIVIL PROJECTS</a>
-				<a class="btn" href="projects.html#projects">PLANT PROJECTS</a>
-				<a class="btn" href="projects.html#projects">BUILDING PROJECTS</a>
+				<a class="btn" href="projects.html">PROJECTS</a>
+				<a class="btn" href="careers.html">CAREERS</a>
 			</div>
 			<div id="whoWeAre">
 				<h2 class="projH2">WHY STA. CLARA?</h2>
 				<hr class="projHR" width="200vw">
-				<div class="whoWeAre slideanim">
+				<div class="whoWeAre">
 					<div>Sta. Clara International Corporation is a group with strong technical orientation and advanced skills in the management and execution of medium to large scale projects on a turn-key basis.</div><br />
 
 					<div>We are one of the leading full-service engineering, construction, development and management enterprises in the Philippines, with overseas operations, serving the Power and Utilities, Infrastructure and Civil Engineering sectors.</div><br />
@@ -70,72 +67,34 @@
 
 			
 			<div class="rowMobile">
-				<h2 class="projH2">PROJECTS</h2>
-				<hr class="projHR" width="200vw">
-				<div class="slideanim">
-					<div class="col-sm-6">
-						<a class="projHome" href="projects.html">
-							<img src="icons/current.svg" /> 
-							<p>ONGOING PROJECTS</p>
-						</a>
-					</div>
-					<div class="col-sm-6">
-						<a class="projHome" href="#">
-							<img src="icons/civil.svg" /> 
-							<p>CIVIL PROJECTS</p>
-						</a>
-					</div>
-					<div class="col-sm-6">
-						<a class="projHome" href="#">
-							<img src="icons/plant.svg" /> 
-							<p>PLANT PROJECTS</p>
-						</a>
-					</div>
-					<div class="col-sm-6">
-						<a class="projHome" href="#">
-							<img src="icons/building.svg" /> 
-							<p>BUILDING PROJECTS</p>
-						</a>
-					</div>
+				
+				<div class="col-sm-6">
+					<a class="projHome ongoing" href="projects.html">
+						<img src="icons/current.svg" /> 
+						<p>PROJECTS</p>
+					</a>
 				</div>
+				<div class="col-sm-6">
+					<a class="projHome" href="careers.html">
+						<img src="icons/jobs.svg" /> 
+						<p>CAREERS</p>
+					</a>
+				</div>
+
+				
 			</div>
 
-			<div class="rowMobile">	
-				<h2 class="projH2">CAREERS</h2>
-				<hr class="projHR" width="200vw">
-				<div class="">
-					<div class="col-sm-6">
-						<a class="projHome" href="careers.html#professionals">
-							<img src="icons/professionals.svg" /> 
-							<p>PROFESSIONALS</p>
-						</a>
-					</div>
-					<div class="col-sm-6">
-						<a class="projHome" href="careers.html#graduates">
-							<img src="icons/graduates.svg" /> 
-							<p>GRADUATES</p>
-						</a>
-					</div>
-					<div class="col-sm-6">
-						<a class="projHome" href="careers.html#skilledCraft">
-							<img src="icons/worker.svg" /> 
-							<p>Skilled Craft</p>
-						</a>
-					</div>
-					<div class="col-sm-6">
-						<a class="projHome" href="careers.html#allJobs">
-							<img src="icons/jobs.svg" /> 
-							<p>All Jobs</p>
-						</a>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</div>
 </main>
 <footer>
-	<div class="footer footer2">
-		SCIC &copy; 2017
+	<div class="container">
+		<div class="footer footer2">
+			<div>SCIC &copy; 2017</div>
+			<div><i class="fa fa-phone" aria-hidden="true"></i>  (02) 706 5156 (02) 706 5158</div>
+			<div><i class="fa fa-envelope" aria-hidden="true"></i> info@staclara.com.ph</div>
+		</div>
 	</div>
 </footer>
 <script>
@@ -143,6 +102,10 @@
 		$(this).toggleClass('active');
 		$('#overlay').toggleClass('open');
 	});
+</script>
+
+<script>
+
 </script>
 </body>
 </html>

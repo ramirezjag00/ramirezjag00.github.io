@@ -11,9 +11,12 @@
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css">
 	<link rel="stylesheet" href="css/lightbox.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+	<script src="js/lightbox.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+
 </head>
 <body>
 	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
@@ -28,11 +31,10 @@
 		<div class="overlay" id="overlay">
 			<nav class="overlay-menu">
 				<ul>
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="projects.html">PROJECTS</a></li>
-					<li><a href="#">UPDATES</a></li>
-					<li><a href="careers.html">CAREERS</a></li>
-					<li><a href="#">CONTACTS</a></li>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="projects.html" class=".projects">Projects</a></li>
+					<li><a href="careers.html">Careers</a></li>
+					<li><a href="careers.html#contacts">Contact Us</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -54,7 +56,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
+									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet">
 										<img src='img/scic-filler.jpg' class="onGoingImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -72,7 +74,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
+									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet">
 										<img src='img/scic-filler.jpg' class="onGoingImage">
 									</a>
 									<ul class="noteList">
@@ -90,119 +92,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="projectRow">
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
+									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet">
 										<img src='img/scic-filler.jpg' class="onGoingImage">
 									</a>
 									<ul class="noteList">
@@ -217,66 +107,12 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
 
 					<div class="col-md-4 col-sm-6">
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
+									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet">
 										<img src='img/scic-filler.jpg' class="onGoingImage">
 									</a>
 									<ul class="noteList">
@@ -294,7 +130,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
+									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet">
 										<img src='img/scic-filler.jpg' class="onGoingImage">
 									</a>
 									<ul class="noteList">
@@ -312,62 +148,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
-										<img src='img/scic-filler.jpg' class="onGoingImage">
-									</a>
-									<ul class="noteList">
-										<li>1Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet" data-title="caption: onGoing Set">
+									<a href='img/scic-filler.jpg' class='thumbnail onGoingSetLink' id="lightbox-img" data-lightbox="ongoingSet">
 										<img src='img/scic-filler.jpg' class="onGoingImage">
 									</a>
 									<ul class="noteList">
@@ -390,7 +171,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
+									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
 										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -408,7 +189,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
+									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
 										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -426,119 +207,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="projectRow">
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
+									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
 										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -553,66 +222,12 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
 
 					<div class="col-md-4 col-sm-6">
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
+									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
 										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -630,7 +245,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
+									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
 										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -648,62 +263,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
-										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>2Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="caption: civil Set">
+									<a href='img/scic-filler.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
 										<img src='img/scic-filler.jpg' class="civilImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -726,7 +286,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
+									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet">
 										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -744,7 +304,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
+									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet">
 										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -762,119 +322,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="projectRow">
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
+									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet">
 										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -889,120 +337,12 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
-										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>3Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
 
 					<div class="col-md-4 col-sm-6">
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
+									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet">
 										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -1020,7 +360,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
+									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet">
 										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -1038,7 +378,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="caption: plant Set">
+									<a href='img/scic-filler.jpg' class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet">
 										<img src='img/scic-filler.jpg' class="plantImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -1061,7 +401,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
+									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet">
 										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -1079,7 +419,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
+									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet">
 										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -1097,119 +437,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-
-
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="projectRow">
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
+									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet">
 										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -1224,120 +452,12 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 col-sm-6">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
-										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>4Name of Project</li>
-										<li>Location</li>
-										<li>Date of Completion</li>
-										<li>Owner</li>
-										<li>Description</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
-					</div>
 
 					<div class="col-md-4 col-sm-6">
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
+									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet">
 										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -1355,7 +475,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
+									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet">
 										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -1373,7 +493,7 @@
 						<div class='section-block'>
 							<div class='section-item'>
 								<div>
-									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="caption: building Set">
+									<a href='img/scic-filler.jpg' class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet">
 										<img src='img/scic-filler.jpg' class="buildingImage" alt="caption1" title="caption1">
 									</a>
 									<ul class="noteList">
@@ -1446,6 +566,6 @@
 			autoPlay: 3000
 		});
 	</script>
-	<script src="js/lightbox-plus-jquery.min.js"></script>
+	
 </body>
 </html>
