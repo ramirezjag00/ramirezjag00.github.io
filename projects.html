@@ -8,14 +8,14 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300|Roboto:300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css">
+	
 	<link rel="stylesheet" href="css/lightbox.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	
 	<script src="js/lightbox.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js"></script>
+
 
 </head>
 <body>
@@ -34,7 +34,6 @@
 					<li><a href="index.html">Home</a></li>
 					<li><a href="projects.html" class=".projects">Projects</a></li>
 					<li><a href="careers.html">Careers</a></li>
-					<li><a href="careers.html#contacts">Contact Us</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -518,34 +517,12 @@
 		<hr class="projHR3" width="200vw">
 		<div class="companyPromise">Sed ultrices porta cursus. Aenean nec sagittis augue. Integer fringilla nunc non leo blandit efficitur. Aenean vel sodales felis. Nunc ac dignissim nunc. Aenean vel pellentesque lectus. Fusce nibh orci, porttitor nec odio sit amet.</div>
 	</div>
-	<h2 class="projH2">Testimonials</h2>
-	<hr class="projHR4" width="200vw">
-	<div class="main-gallery">
-		<div class="gallery-cell">
-			<div class="testimonial">
-				<img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/jsa/128.jpg">
-				<q class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</q>
-				<span class="testimonial-author">Joe Smith, CEO of Cubix</span>
-			</div>
-		</div>
-		<div class="gallery-cell">
-			<div class="testimonial">
-				<img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/chexee/128.jpg">
-				<q class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</q>
-				<span class="testimonial-author">Lisa Jones, Freelance Web Developer</span>
-			</div>
-		</div>
-		<div class="gallery-cell">
-			<div class="testimonial">
-				<img class="testimonial-avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/andretacuyan/128.jpg">
-				<q class="testimonial-quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mauris ex, gravida ut leo eu, rhoncus porta orci. Fusce vitae rutrum nulla.</q>
-				<span class="testimonial-author">Ryan Waltz, Front-End Developer</span>
-			</div>
-		</div>
-	</div>
+
 
 	<footer>
+
 		<div class="footer">
+			<hr class="projHR4" width="70vw">
 			SCIC &copy; 2017
 		</div>
 	</footer>
@@ -553,17 +530,6 @@
 		$('#toggle').click(function() {
 			$(this).toggleClass('active');
 			$('#overlay').toggleClass('open');
-		});
-	</script>
-
-	<!-- testimonial script -->
-	<script>
-		var flkty = new Flickity( '.main-gallery', {
-			cellAlign: 'left',
-			contain: true,
-			wrapAround: true,
-			prevNextButtons: false,
-			autoPlay: 3000
 		});
 	</script>
 	

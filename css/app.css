@@ -239,11 +239,11 @@
 
   .projHR3 {
     border: 2px solid #00b454;
-    top: 40%;
+    top: 37%;
     left: 50%;
-    -webkit-transform: translate(-50%, -40%);
-    -ms-transform: translate(-50%, -40%);
-    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -37%);
+    -ms-transform: translate(-50%, -37%);
+    transform: translate(-50%, -37%);
     position: absolute; }
 
   main {
@@ -252,7 +252,8 @@
   .companyPromise {
     text-align: center;
     color: #ffffff;
-    font-size: 1.5 em;
+    font-size: 1em;
+    font-weight: 300;
     top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -70%);
@@ -300,8 +301,7 @@
     background: #00b454 !important; }
 
   hr.projHR4 {
-    border: 2px solid #00b454;
-    margin-bottom: 10vh; }
+    border: 0.5px solid rgba(48, 48, 48, 0.5); }
 
   ul.noteList {
     list-style-type: none; }
@@ -597,11 +597,11 @@
 
   .projHR3 {
     border: 2px solid #00b454;
-    top: 40%;
+    top: 35%;
     left: 50%;
-    -webkit-transform: translate(-50%, -40%);
-    -ms-transform: translate(-50%, -40%);
-    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -35%);
+    -ms-transform: translate(-50%, -35%);
+    transform: translate(-50%, -35%);
     position: absolute; }
 
   main {
@@ -610,7 +610,8 @@
   .companyPromise {
     text-align: center;
     color: #ffffff;
-    font-size: 1.5 em;
+    font-size: 1em;
+    font-weight: 300;
     top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -70%);
@@ -658,8 +659,7 @@
     background: #00b454 !important; }
 
   hr.projHR4 {
-    border: 2px solid #00b454;
-    margin-bottom: 10vh; }
+    border: 0.5px solid rgba(48, 48, 48, 0.5); }
 
   ul.noteList {
     list-style-type: none; }
@@ -955,11 +955,11 @@
 
   .projHR3 {
     border: 2px solid #00b454;
-    top: 40%;
+    top: 30%;
     left: 50%;
-    -webkit-transform: translate(-50%, -40%);
-    -ms-transform: translate(-50%, -40%);
-    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
     position: absolute; }
 
   main {
@@ -968,7 +968,8 @@
   .companyPromise {
     text-align: center;
     color: #ffffff;
-    font-size: 1.5 em;
+    font-size: 1.5em;
+    font-weight: 300;
     top: 60%;
     left: 50%;
     -webkit-transform: translate(-50%, -70%);
@@ -1016,8 +1017,7 @@
     background: #00b454 !important; }
 
   hr.projHR4 {
-    border: 2px solid #00b454;
-    margin-bottom: 10vh; }
+    border: 0.5px solid rgba(48, 48, 48, 0.5); }
 
   ul.noteList {
     list-style-type: none; }
@@ -1138,14 +1138,15 @@
     align-content: center;
     vertical-align: middle; }
 
-  a.btn {
+  .rowProjects a.btn {
     display: inline-block;
     padding: 1% 2% 1% !important;
-    margin-right: 7px;
     font-size: 1em;
     border: transparent 1px solid;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+    margin-right: 3em;
+    clear: both;
     font-weight: bolder;
     border-radius: 0;
     text-decoration: none;
@@ -1175,8 +1176,10 @@
   footer div.footer2 {
     color: #ffffff;
     position: absolute;
+    right: 0;
     bottom: 0;
-    left: 40%; }
+    left: 0;
+    padding: 1rem; }
 
   #scicLogo {
     width: 2em;
@@ -1290,11 +1293,11 @@
 
   .projHR3 {
     border: 2px solid #00b454;
-    top: 40%;
+    top: 35%;
     left: 50%;
-    -webkit-transform: translate(-50%, -40%);
-    -ms-transform: translate(-50%, -40%);
-    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -35%);
+    -ms-transform: translate(-50%, -35%);
+    transform: translate(-50%, -35%);
     position: absolute; }
 
   main {
@@ -1303,7 +1306,8 @@
   .companyPromise {
     text-align: center;
     color: #ffffff;
-    font-size: 1.5 em;
+    font-size: 1em;
+    font-weight: 300;
     top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -70%);
@@ -1311,44 +1315,8 @@
     transform: translate(-50%, -70%);
     position: absolute; }
 
-  .main-gallery {
-    background: #fff;
-    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) a;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
-
-  .gallery-cell {
-    width: 100%; }
-
-  .testimonial {
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto 10vh auto;
-    padding: 0 20px; }
-
-  .testimonial-avatar {
-    width: 100px;
-    border-radius: 50%; }
-
-  .testimonial-quote {
-    display: block;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 10px 0; }
-
-  .testimonial-author {
-    display: block;
-    font-weight: 800;
-    color: #00b454; }
-
-  .flickity-page-dots {
-    bottom: 25px; }
-
-  .dot.is-selected {
-    background: #00b454 !important; }
-
   hr.projHR4 {
-    border: 2px solid #00b454;
-    margin-bottom: 10vh; }
+    border: 0.5px solid rgba(48, 48, 48, 0.5); }
 
   ul.noteList {
     list-style-type: none; }
@@ -1406,7 +1374,10 @@
     width: 0%; }
 
   .contact {
-    text-align: center; } }
+    text-align: center; }
+
+  #myBtn {
+    display: none; } }
 @media only screen and (min-width: 1025px) {
   .rowImageMobile2 {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/RPWSIP1-blur.JPG");
@@ -1469,14 +1440,15 @@
     align-content: center;
     vertical-align: middle; }
 
-  a.btn {
+  .rowProjects a.btn {
     display: inline-block;
     padding: 1% 2% 1% !important;
-    margin-right: 7px;
     font-size: 1em;
     border: transparent 1px solid;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+    margin-right: 3em;
+    clear: both;
     font-weight: bolder;
     border-radius: 0;
     text-decoration: none;
@@ -1506,8 +1478,10 @@
   footer div.footer2 {
     color: #ffffff;
     position: absolute;
+    right: 0;
     bottom: 0;
-    left: 40%; }
+    left: 0;
+    padding: 1rem; }
 
   #scicLogo {
     width: 2em;
@@ -1621,11 +1595,11 @@
 
   .projHR3 {
     border: 2px solid #00b454;
-    top: 40%;
+    top: 30%;
     left: 50%;
-    -webkit-transform: translate(-50%, -40%);
-    -ms-transform: translate(-50%, -40%);
-    transform: translate(-50%, -40%);
+    -webkit-transform: translate(-50%, -30%);
+    -ms-transform: translate(-50%, -30%);
+    transform: translate(-50%, -30%);
     position: absolute; }
 
   main {
@@ -1634,7 +1608,8 @@
   .companyPromise {
     text-align: center;
     color: #ffffff;
-    font-size: 1.5 em;
+    font-size: 1.5em;
+    font-weight: 300;
     top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -70%);
@@ -1642,44 +1617,8 @@
     transform: translate(-50%, -70%);
     position: absolute; }
 
-  .main-gallery {
-    background: #fff;
-    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) a;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
-
-  .gallery-cell {
-    width: 100%; }
-
-  .testimonial {
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto 10vh auto;
-    padding: 0 20px; }
-
-  .testimonial-avatar {
-    width: 100px;
-    border-radius: 50%; }
-
-  .testimonial-quote {
-    display: block;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 10px 0; }
-
-  .testimonial-author {
-    display: block;
-    font-weight: 800;
-    color: #00b454; }
-
-  .flickity-page-dots {
-    bottom: 25px; }
-
-  .dot.is-selected {
-    background: #00b454 !important; }
-
   hr.projHR4 {
-    border: 2px solid #00b454;
-    margin-bottom: 10vh; }
+    border: 0.5px solid rgba(48, 48, 48, 0.5); }
 
   ul.noteList {
     list-style-type: none; }
@@ -1737,7 +1676,10 @@
     width: 0%; }
 
   .contact {
-    text-align: center; } }
+    text-align: center; }
+
+  #myBtn {
+    display: none; } }
 @media only screen and (min-width: 2048px) {
   .rowImageMobile2 {
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/RPWSIP1-blur.JPG");
@@ -1800,14 +1742,15 @@
     align-content: center;
     vertical-align: middle; }
 
-  a.btn {
+  .rowProjects a.btn {
     display: inline-block;
     padding: 1% 2% 1% !important;
-    margin-right: 7px;
     font-size: 1em;
     border: transparent 1px solid;
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
+    margin-right: 3em;
+    clear: both;
     font-weight: bolder;
     border-radius: 0;
     text-decoration: none;
@@ -1837,8 +1780,10 @@
   footer div.footer2 {
     color: #ffffff;
     position: absolute;
+    right: 0;
     bottom: 0;
-    left: 40%; }
+    left: 0;
+    padding: 1rem; }
 
   #scicLogo {
     width: 2em;
@@ -1952,7 +1897,7 @@
 
   .projHR3 {
     border: 2px solid #00b454;
-    top: 40%;
+    top: 30%;
     left: 50%;
     -webkit-transform: translate(-50%, -40%);
     -ms-transform: translate(-50%, -40%);
@@ -1965,7 +1910,8 @@
   .companyPromise {
     text-align: center;
     color: #ffffff;
-    font-size: 1.5 em;
+    font-size: 1.5em;
+    font-weight: 300;
     top: 70%;
     left: 50%;
     -webkit-transform: translate(-50%, -70%);
@@ -1973,44 +1919,8 @@
     transform: translate(-50%, -70%);
     position: absolute; }
 
-  .main-gallery {
-    background: #fff;
-    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25) a;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25); }
-
-  .gallery-cell {
-    width: 100%; }
-
-  .testimonial {
-    text-align: center;
-    max-width: 850px;
-    margin: 0 auto 10vh auto;
-    padding: 0 20px; }
-
-  .testimonial-avatar {
-    width: 100px;
-    border-radius: 50%; }
-
-  .testimonial-quote {
-    display: block;
-    font-size: 24px;
-    font-weight: 300;
-    padding: 10px 0; }
-
-  .testimonial-author {
-    display: block;
-    font-weight: 800;
-    color: #00b454; }
-
-  .flickity-page-dots {
-    bottom: 25px; }
-
-  .dot.is-selected {
-    background: #00b454 !important; }
-
   hr.projHR4 {
-    border: 2px solid #00b454;
-    margin-bottom: 10vh; }
+    border: 0.5px solid rgba(48, 48, 48, 0.5); }
 
   ul.noteList {
     list-style-type: none; }
@@ -2076,8 +1986,13 @@
   footer div.footer2 {
     color: #ffffff;
     position: absolute;
+    right: 0;
     bottom: 0;
-    left: 43%; } }
+    left: 0;
+    padding: 1rem; }
+
+  #myBtn {
+    display: none; } }
 /* PLUGINS */
 /* BASE STYLES */
 html {
@@ -2144,7 +2059,7 @@ footer div.row {
 .button_container span {
   background: #ffffff;
   border: none;
-  height: 5px;
+  height: 2px;
   width: 100%;
   position: absolute;
   top: 0;
