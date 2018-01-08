@@ -55,14 +55,18 @@ $(document).ready(function() {
 	})
 
 	$('.proj2').click(function() {
-		$('.projectContainer').html($('#civil').html());
+		$('.projectContainer').html($('#power').html());
 	})
 
 	$('.proj3').click(function() {
-		$('.projectContainer').html($('#plant').html());
+		$('.projectContainer').html($('#water').html());
 	})
 
 	$('.proj4').click(function() {
+		$('.projectContainer').html($('#civil').html());
+	})
+
+	$('.proj5').click(function() {
 		$('.projectContainer').html($('#building').html());
 	})
 

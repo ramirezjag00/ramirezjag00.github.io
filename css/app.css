@@ -199,7 +199,7 @@
   .projectLinks div a:hover {
     color: #00b454; }
 
-  #ongoing, #civil, #plant, #building {
+  #ongoing, #civil, #power, #building, #water {
     display: none; }
 
   .inactive {
@@ -557,7 +557,7 @@
   .projectLinks div a:hover {
     color: #00b454; }
 
-  #ongoing, #civil, #plant, #building {
+  #ongoing, #civil, #power, #building, #water {
     display: none; }
 
   .inactive {
@@ -915,7 +915,7 @@
   .projectLinks div a:hover {
     color: #00b454; }
 
-  #ongoing, #civil, #plant, #building {
+  #ongoing, #civil, #power, #building, #water {
     display: none; }
 
   .inactive {
@@ -1241,7 +1241,7 @@
   .projectLinks div a:hover {
     color: #00b454; }
 
-  #ongoing, #civil, #plant, #building {
+  #ongoing, #civil, #power, #building, #water {
     display: none; }
 
   .inactive {
@@ -1543,7 +1543,7 @@
   .projectLinks div a:hover {
     color: #00b454; }
 
-  #ongoing, #civil, #plant, #building {
+  #ongoing, #civil, #power, #building, #water {
     display: none; }
 
   .inactive {
@@ -1845,7 +1845,7 @@
   .projectLinks div a:hover {
     color: #00b454; }
 
-  #ongoing, #civil, #plant, #building {
+  #ongoing, #civil, #power, #building, #water {
     display: none; }
 
   .inactive {
