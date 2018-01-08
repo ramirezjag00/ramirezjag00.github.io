@@ -32,12 +32,12 @@ $(window).scroll(function() {
 $(document).ready(function() {
 
 	//make ongoing class default
-	$('.projectContainer').html($('#ongoing').html());
-	if ($('.proj1').is("active"))
-		$('.button-proj').not('.proj1').removeClass('active');
+	$('.projectContainer').html($('#power').html());
+	if ($('.proj2').is("active"))
+		$('.button-proj').not('.proj2').removeClass('active');
 	else
-		$('.proj1').addClass('active');
-	$('.button-proj').not('.proj1').removeClass('active');
+		$('.proj2').addClass('active');
+	$('.button-proj').not('.proj2').removeClass('active');
 
 
      //active link on-click
