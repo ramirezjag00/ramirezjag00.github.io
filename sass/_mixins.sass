@@ -149,6 +149,13 @@
 	h2.projH2
 		text-align: center
 
+	h1.projH1
+		font-weight: 700
+		text-align: left
+		font-family: Montserrat
+		font-size: 3em
+		margin-bottom: 5vh
+
 	hr.projHR
 		border: 2px solid #00b454
 
@@ -218,28 +225,21 @@
 		background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
 		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
 		height: 60vh
-		max-width: 100%
-		width: 100vw
+		max-width: 100vw
 		background-position: center
 		background-repeat: no-repeat
 		background-size: cover
 		position: relative
-		z-index: -99
 		margin-bottom: 10vh
 
 	.projH3
 		color: #ffffff
 		text-align: center
 		top: $projH3YHeight
-		left: 50%
 		-webkit-transform: translate(-50%, 20%)
 		-ms-transform: translate(-50%, 20%)
 		transform: translate(-50%, 20%)
-		position: absolute
 		font-weight: bolder
-		content: ""
-		clear: both
-		display: table
 
 	.projHR3
 		border: 2px solid #00b454
@@ -263,12 +263,7 @@
 		-webkit-transform: translate(-50%, -70%)
 		-ms-transform: translate(-50%, -70%)
 		transform: translate(-50%, $yMargin)
-		position: absolute
-		content: ""
-		clear: both
-		display: table
-		padding: 0 5vw
-
+		
 	.main-gallery
 		background: #fff
 		-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
@@ -591,6 +586,7 @@
 		border: 2px solid #00b454
 		top: $comProPosition
 		left: 50%
+		width: 10%
 		-webkit-transform: translate(-50%, $comProTrans)
 		-ms-transform: translate(-50%, $comProTrans)
 		transform: translate(-50%, $comProTrans)
@@ -679,6 +675,15 @@
 		height: 30vh
 		width: 100%
 		max-width: 100%
+
+	.projectRow
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+		box-sizing: border-box
+
+	.col
+		flex: 1 33%
 
 
 /* MEDIA QUERY */
