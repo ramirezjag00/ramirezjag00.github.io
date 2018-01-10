@@ -13,8 +13,8 @@
 	<script src="js/script.js"></script>
 </head>
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
-	<video autoplay muted loop playsinline id="myVideo" poster="img/logo3_SVG.svg">
+	<button onclick="topFunction()" id="btn-to-top" title="Go to top"><i class="fa fa-angle-up"></i></button>
+	<video autoplay muted loop playsinline id="video-bg-index-desk" poster="img/logo3_SVG.svg">
 		<source src="img/webdev 15.mp4" type="video/mp4"/>
 		Your browser does not support HTML5 video.
 	</video>
@@ -22,10 +22,10 @@
 		<div class="navbar-header" >
 			<a class="navbar-brand" href="index.html"><img id="scicLogo" src="img/scic_logo.png"/>
 			</a>
-			<div class="rowImageMobile">
-				<div class="text">
-					<div class="imageText">Sta. Clara International Corporation</div><br/>
-					<div class="imageText">Building your way to the future.</div>
+			<div class="hero-image-index-mobile">
+				<div class="hero-image-text-container-mobile">
+					<div class="hero-image-text-mobile">Sta. Clara International Corporation</div><br/>
+					<div class="hero-image-text-mobile">Building your way to the future</div>
 				</div>
 			</div>
 		</div>
@@ -34,7 +34,7 @@
 			<nav class="overlay-menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="projects.html" class=".projects">Projects</a></li>
+					<li><a href="projects.html">Projects</a></li>
 					<li><a href="careers.html">Careers</a></li>
 				</ul>
 			</nav>
@@ -43,47 +43,39 @@
 	<hr>
 	<main>
 		<div class="container">
-			<div class="rowHeader">
-				<div class="header">Sta. Clara International Corporation</div>
-				<div class="header">Building your way to the future.</div>
+			<div class="header-text-container-desk">
+				<div class="header-text">Sta. Clara International Corporation</div>
+				<div class="header-text">Building your way to the future</div>
 			</div>
-			<!--  -->
-			<div class="rowProjects">
+
+			<div class="link-container-desk">
 				<a class="btn" href="projects.html">Projects</a>
 				<a class="btn" href="careers.html">Careers</a>
 			</div>
-			<div id="whoWeAre">
-				<h2 class="projH2">WHY STA. CLARA?</h2>
-				<hr class="projHR" width="200vw">
-				<div class="whoWeAre">
-					<div>Sta. Clara International Corporation is a group with strong technical orientation and advanced skills in the management and execution of medium to large scale projects on a turn-key basis.</div><br />
+			<div id="header-index-mobile-container">
+				<h2 class="header-index-mobile">WHY STA. CLARA?</h2>
+				<div class="index-content-mobile">
+					<p>Sta. Clara International Corporation is a group with strong technical orientation and advanced skills in the management and execution of medium to large scale projects on a turn-key basis.</p><br />
 
-					<div>We are one of the leading full-service engineering, construction, development and management enterprises in the Philippines, with overseas operations, serving the Power and Utilities, Infrastructure and Civil Engineering sectors.</div><br />
+					<p>We are one of the leading full-service engineering, construction, development and management enterprises in the Philippines, with overseas operations, serving the Power and Utilities, Infrastructure and Civil Engineering sectors.</p><br />
 
-					<div>We offer market research; feasibility studies; design and engineering site management; works execution; start-up and commissioning; operation and maintenance; and customer personnel training.</div><br />
+					<p>We offer market research; feasibility studies; design and engineering site management; works execution; start-up and commissioning; operation and maintenance; and customer personnel training.</p><br />
 				</div>
 			</div>
-
-			
-			<div class="rowMobile">
-				
+			<div class="link-container-index-mobile">
 				<div class="col-sm-6">
-					<a class="projHome ongoing" href="projects.html">
+					<a class="btn-link" href="projects.html">
 						<img src="icons/current.svg" /> 
-						<p>PROJECTS</p>
+						<p>PROJECTS</>
 					</a>
 				</div>
 				<div class="col-sm-6">
-					<a class="projHome" href="careers.html">
+					<a class="btn-link" href="careers.html">
 						<img src="icons/jobs.svg" /> 
 						<p>CAREERS</p>
 					</a>
 				</div>
-
-				
 			</div>
-
-
 		</div>
 	</div>
 </main>

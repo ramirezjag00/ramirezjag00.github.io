@@ -8,18 +8,16 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Raleway:300|Roboto:300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/app.css">
-	
-	<link rel="stylesheet" href="css/lightbox.min.css">
+
+	<link rel="stylesheet" href="css/lightbox.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	
+
 	<script src="js/lightbox.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
-
-
 </head>
 <body>
-	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up"></i></button>
+	<button onclick="topFunction()" id="btn-to-top" title="Go to top"><i class="fa fa-angle-up"></i></button>
 	<nav class="navbar">
 		<div class="navbar-header" >
 			<a class="navbar-brand" href="index.html"><img id="scicLogo" src="img/scic_logo.png"/>
@@ -32,7 +30,7 @@
 			<nav class="overlay-menu">
 				<ul>
 					<li><a href="index.html">Home</a></li>
-					<li><a href="projects.html" class=".projects">Projects</a></li>
+					<li><a href="projects.html">Projects</a></li>
 					<li><a href="careers.html">Careers</a></li>
 				</ul>
 			</nav>
@@ -40,110 +38,87 @@
 	</nav>
 	<hr>
 	<main>
-		<div class="container">
+		<div class="container-projects">
 			<h1 class="projH1" id="projects">Projects</h1>
 			<div class="projectLinks">
 				<div><a href="#projects" class="proj2 button-proj inactive">Power</a></div>
 				<div><a href="#projects" class="proj4 button-proj inactive">Civil</a></div>
 			</div>
-			
+
 			<div id="power">
 				<div class="projectRow">
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/27.4 MW_DIESEL_POWER_PLANT.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet" data-title="The project involves the construction of a 27.4 megawatt Diesel Power Plant located at Minergy Road, Brgy. Tablon, Cagayan De Oro City. Components of the project include civil and structural works.">
-										<img src='img/27.4 MW_DIESEL_POWER_PLANT_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>27.4 Minergy Diesel Power Plant</li>
-										<li>Tablon, Cagayan De Oro</li>
-										<li>2011</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/27.4 MW_DIESEL_POWER_PLANT.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet" data-title="The project involves the construction of a 27.4 megawatt Diesel Power Plant located at Minergy Road, Brgy. Tablon, Cagayan De Oro City. Components of the project include civil and structural works.">
+							<img src='img/27.4 MW_DIESEL_POWER_PLANT_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>27.4 Minergy Diesel Power Plant</li>
+							<li>Tablon, Cagayan De Oro</li>
+							<li>2011</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/54_MW_Guimaras_Wind_Power.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet" data-title="The project involves foundation and concrete structure, road and paving work, sewer, piping, electrical & instrumentation, piling works.">
-										<img src='img/54_MW_Guimaras_Wind_Power_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>54MW San Lorenzo Wind Farm Guimaras</li>
-										<li>San Lorenzo, Guimaras</li>
-										<li>2015</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/54_MW_Guimaras_Wind_Power.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet" data-title="The project involves foundation and concrete structure, road and paving work, sewer, piping, electrical & instrumentation, piling works.">
+							<img src='img/54_MW_Guimaras_Wind_Power_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>54MW San Lorenzo Wind Farm Guimaras</li>
+							<li>San Lorenzo, Guimaras</li>
+							<li>2015</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/10MW_Battery_Energy_Storage_System.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet">
-										<img src='img/10MW_Battery_Energy_Storage_System_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>Battery Energy Storage</li>
-										<li>Masinloc, Zambales</li>
-										<li>2016</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/10MW_Battery_Energy_Storage_System.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet">
+							<img src='img/10MW_Battery_Energy_Storage_System_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>Battery Energy Storage</li>
+							<li>Masinloc, Zambales</li>
+							<li>2016</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/Irisan_1_HEPP.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet" data-title="The project includes construction of weir intake, headrace culvert, desander, penstock, powerhouse and tailrace channel. Irisan 1 HEPP Project is situated within the boundaries of Baguio City and Municipality of Tuba. The weir/intake, desilting basin, conveyance line and penstock are approximately 7 kilometers from Baguio City and are accessible through naguilan Road.">
-										<img src='img/Irisan_1_HEPP_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>Irisan 1 Hydroelectric Power Plant</li>
-										<li>Irisan, Baguio City</li>
-										<li>2012</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/Irisan_1_HEPP.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet" data-title="The project includes construction of weir intake, headrace culvert, desander, penstock, powerhouse and tailrace channel. Irisan 1 HEPP Project is situated within the boundaries of Baguio City and Municipality of Tuba. The weir/intake, desilting basin, conveyance line and penstock are approximately 7 kilometers from Baguio City and are accessible through naguilan Road.">
+							<img src='img/Irisan_1_HEPP_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>Irisan 1 Hydroelectric Power Plant</li>
+							<li>Irisan, Baguio City</li>
+							<li>2012</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/7.0 MW_Bubunawan_HEPP.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet" data-title="The project involves massive rehabilitation works that includes retrofitting of new powerhouse, widening, blasting, modification of existing spillway, and new access road. This also includes the construction of a 240 meter long penstock with a diameter of 2.6 meters, a 378 meter access road with a slope protection and concreting retaining wall.">
-										<img src='img/7.0 MW_Bubunawan_HEPP_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>7.0 MW Bubunawan HEPP Rehabilitation Project</li>
-										<li>Baungon, Bukidnon</li>
-										<li>2013</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/7.0 MW_Bubunawan_HEPP.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet" data-title="The project involves massive rehabilitation works that includes retrofitting of new powerhouse, widening, blasting, modification of existing spillway, and new access road. This also includes the construction of a 240 meter long penstock with a diameter of 2.6 meters, a 378 meter access road with a slope protection and concreting retaining wall.">
+							<img src='img/7.0 MW_Bubunawan_HEPP_thumb.jpg' class="powerImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>7.0 MW Bubunawan HEPP Rehabilitation Project</li>
+							<li>Baungon, Bukidnon</li>
+							<li>2013</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/14MW_Sabangan_HEPP_thumb.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet">
-										<img src='img/14MW_Sabangan_HEPP.jpg' class="powerImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>Sabangan 14MW Hydroelectric Power Plant</li>
-										<li>Sabangan Mountain Province</li>
-										<li>2015</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/14MW_Sabangan_HEPP_thumb.jpg' class='thumbnail powerSetLink' id="lightbox-img" data-lightbox="powerSet">
+							<img src='img/14MW_Sabangan_HEPP.jpg' class="powerImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>Sabangan 14MW Hydroelectric Power Plant</li>
+							<li>Sabangan Mountain Province</li>
+							<li>2015</li>
+						</ul>
+					</div>
+					<!-- since justify-content:space-evenly is still experimental we used space-around instead and here is a work around. add fill dummies here in display: hidden;. number is depending on possible col minus 1 ... 5 cols for 4kres minus 1 = 4-->
+					<div class="col flex-dummy">
+
+					</div>
+					<div class="col flex-dummy">
+
+					</div>
+					<div class="col flex-dummy">
+
+					</div>
+					<div class="col flex-dummy">
+
 					</div>
 				</div>
 				<br />
@@ -151,117 +126,87 @@
 			<div id="civil">
 				<div class="projectRow">
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/Petron-RMP-2.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
-										<img src='img/Petron-RMP-2_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>PETRON RMP2</li>
-										<li>Limay, Bataan</li>
-										<li>2014</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/Petron-RMP-2.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
+							<img src='img/Petron-RMP-2_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>PETRON RMP2</li>
+							<li>Limay, Bataan</li>
+							<li>2014</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/SCTEX.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="Embankment of 1.2 million cubic meters of lahar for 8km section including base course, cement-treated base and the 8RCDG bridges, 2 underpass, RCBC, RCPC, drainage structures, shotcrete works and slope protection works. Construction of 4 lane Asphalt pavement expressway, bridges, underpass, trench excavation, backfilling and compaction.">
-										<img src='img/SCTEX_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>Subic-Clark-Tarlac Expressway (Subic-Clark Section) Package 1</li>
-										<li>Dinalupihan, Bataan</li>
-										<li>2007</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/SCTEX.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="Embankment of 1.2 million cubic meters of lahar for 8km section including base course, cement-treated base and the 8RCDG bridges, 2 underpass, RCBC, RCPC, drainage structures, shotcrete works and slope protection works. Construction of 4 lane Asphalt pavement expressway, bridges, underpass, trench excavation, backfilling and compaction.">
+							<img src='img/SCTEX_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>Subic-Clark-Tarlac Expressway (Subic-Clark Section) Package 1</li>
+							<li>Dinalupihan, Bataan</li>
+							<li>2007</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/Maco_Tailings_Management.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
-										<img src='img/Maco_Tailings_Management_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>Maco Tailings Management Facility</li>
-										<li>Masara, Maco, Compostela Valley Province</li>
-										<li>2013</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/Maco_Tailings_Management.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
+							<img src='img/Maco_Tailings_Management_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>Maco Tailings Management Facility</li>
+							<li>Masara, Maco, Compostela Valley Province</li>
+							<li>2013</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/S&R_DAVAO.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="The scope of work includes civil, structural, architectural, mechanical, electrical, plumbing, and fire protection works for all building establishments and parking areas.">
-										<img src='img/S&R_DAVAO_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>S&R Membership Shopping Facility - Building and Parking (Davao)</li>
-										<li>Ma-a, Davao</li>
-										<li>2013</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/S&R_DAVAO.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="The scope of work includes civil, structural, architectural, mechanical, electrical, plumbing, and fire protection works for all building establishments and parking areas.">
+							<img src='img/S&R_DAVAO_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>S&R Membership Shopping Facility - Building and Parking (Davao)</li>
+							<li>Ma-a, Davao</li>
+							<li>2013</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/Biscuit_Manufacturing_Plant.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
-										<img src='img/Biscuit_Manufacturing_Plant_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>Project X (Biscuit Manufacturing Plant)</li>
-										<li>Carmelray Industrial Park II, Brgy. Punta, Calamba</li>
-										<li>2009</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/Biscuit_Manufacturing_Plant.jpg' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet">
+							<img src='img/Biscuit_Manufacturing_Plant_thumb.jpg' class="civilImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>Project X (Biscuit Manufacturing Plant)</li>
+							<li>Carmelray Industrial Park II, Brgy. Punta, Calamba</li>
+							<li>2009</li>
+						</ul>
 					</div>
 					<div class="col">
-						<div class='section-block'>
-							<div class='section-item'>
-								<div>
-									<a href='img/Pomelo_Food_Manufacuring.png' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="This is a design-build project for a three-storey noodle manufacturing plant of Monde nissin with total floor area of 17,100 square meters. The scope of work includes site development, civil, architectural, mechanical, electrical, plumbing, mechanical, electrical, plumbing, and fire protection.">
-										<img src='img/Pomelo_Food_Manufacuring.png' class="civilImage" alt="caption1" title="caption1">
-									</a>
-									<ul class="noteList">
-										<li>Pomelo Food Manufacturing Plant & Logistics Warehouse Building</li>
-										<li>Brgy. Ilang Tibunko, Davao City</li>
-										<li>2012</li>
-									</ul>                            
-								</div>
-							</div>
-						</div>
+						<a href='img/Pomelo_Food_Manufacuring.png' class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="This is a design-build project for a three-storey noodle manufacturing plant of Monde nissin with total floor area of 17,100 square meters. The scope of work includes site development, civil, architectural, mechanical, electrical, plumbing, mechanical, electrical, plumbing, and fire protection.">
+							<img src='img/Pomelo_Food_Manufacuring.png' class="civilImage" alt="caption1" title="caption1">
+						</a>
+						<ul class="noteList">
+							<li>Pomelo Food Manufacturing Plant & Logistics Warehouse Building</li>
+							<li>Brgy. Ilang Tibunko, Davao City</li>
+							<li>2012</li>
+						</ul>
+					</div>
+					<!-- since justify-content:space-evenly is still experimental we used space-around instead and here is a work around. add fill dummies here in display: hidden;. number is depending on possible col minus 1 ... 5 cols for 4kres minus 1 = 4-->
+					<div class="col flex-dummy">
+					</div>
+					<div class="col flex-dummy">
+					</div>
+					<div class="col flex-dummy">
+					</div>
+					<div class="col flex-dummy">
 					</div>
 				</div>
 				<br />
 			</div>
-
 			<div class="projectContainer"></div>
 		</div>
 	</main>
 	<div class="rowImage3">
 		<h2 class="projH3">The Company Promise</h2>
-		<hr class="projHR3">
-		<p class="companyPromise">Sta. Clara International Corporation is your prime partner in nation-building. We will continue to deliver legacy projects with the highest standards of quality and safety believing that out works greatly contribute to the countery's progress and development.</p>
+		<p class="companyPromise">Sta. Clara International Corporation is your prime partner in nation-building. We will continue to deliver legacy projects with the highest standards of quality and safety believing that out works greatly contribute to the country's progress and development.</p>
+
 	</div>
-
-
+	<hr>
 	<footer>
-
 		<div class="footer">
 			<hr class="projHR4" width="70vw">
 			SCIC &copy; 2017
@@ -273,6 +218,6 @@
 			$('#overlay').toggleClass('open');
 		});
 	</script>
-	
+
 </body>
 </html>
