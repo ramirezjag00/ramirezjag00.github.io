@@ -32,7 +32,7 @@ $(window).scroll(function() {
 $(document).ready(function() {
 
 	//make ongoing class default
-	$('.projectContainer').html($('#power').html());
+	$('.project-container').html($('#power').html());
 	if ($('.proj2').is("active"))
 		$('.button-proj').not('.proj2').removeClass('active');
 	else
@@ -51,23 +51,23 @@ $(document).ready(function() {
 
 	//show images of specific link category on-click
 	$('.proj1').click(function() {
-		$('.projectContainer').html($('#ongoing').html());
+		$('.project-container').html($('#ongoing').html());
 	})
 
 	$('.proj2').click(function() {
-		$('.projectContainer').html($('#power').html());
+		$('.project-container').html($('#power').html());
 	})
 
 	$('.proj3').click(function() {
-		$('.projectContainer').html($('#water').html());
+		$('.project-container').html($('#water').html());
 	})
 
 	$('.proj4').click(function() {
-		$('.projectContainer').html($('#civil').html());
+		$('.project-container').html($('#civil').html());
 	})
 
 	$('.proj5').click(function() {
-		$('.projectContainer').html($('#building').html());
+		$('.project-container').html($('#building').html());
 	})
 
 }); //end of ready
@@ -77,7 +77,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
 	//make alljobs class default
-	$('.careerContainer').html($('#allJobs').html());
+	$('.career-container').html($('#allJobs').html());
 	if ($('.career1').is("active"))
 		$('.button-car').not('.career1').removeClass('active');
 	else
@@ -96,19 +96,19 @@ $(document).ready(function() {
 
 	//show images of specific link category on-click
 	$('.career1').click(function() {
-		$('.careerContainer').html($('#allJobs').html());
+		$('.career-container').html($('#allJobs').html());
 	})
 
 	$('.career2').click(function() {
-		$('.careerContainer').html($('#professionals').html());
+		$('.career-container').html($('#professionals').html());
 	})
 
 	$('.career3').click(function() {
-		$('.careerContainer').html($('#graduates').html());
+		$('.career-container').html($('#graduates').html());
 	})
 
 	$('.career4').click(function() {
-		$('.careerContainer').html($('#skilledCraft').html());
+		$('.career-container').html($('#skilledCraft').html());
 	})
 
 }); //end of ready

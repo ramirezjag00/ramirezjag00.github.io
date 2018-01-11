@@ -14,8 +14,172 @@
 #btn-to-top:hover
 	background-color: #a2e7c1
 
+.footer
+	color: #303030
+	position: relative
+	clear: both
+	text-align: center
+	margin-top: 10vh
+
+#scicLogo
+	width: 2.5em
+	height: 2.5em
+	display: inline-block
+	margin-top: 10px
+
+.hero-image-project
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/RPWSIP1-blur.JPG")
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG")
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG")
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG")
+	max-width: 100%
+	width: 100vw
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	z-index: -99
+	margin: 0 !important
+	padding-top: 0 !important
+
+.container-projects
+	margin-left: 8vw
+	margin-right: 8vw
+
+.project-categories
+	margin-bottom: 5vh
+
+.project-categories div
+	display: inline
+	margin-right: 3vw
+
+.project-categories div a
+	text-decoration: none
+	font-weight: bold
+	-webkit-transition: color 0.1s linear 0.25s
+	-o-transition: color 0.1s linear 0.25s
+	transition: color 0.1s linear 0.25s
+
+.project-categories div a:hover
+	color: #00b454
+
+.thumbnail
+	border-radius: 0
+	border: none
+	-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
+
+.thumbnail:hover
+	text-decoration: none
+	-webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
+	
+a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover
+	border-color: transparent
+
+ul.project-desc-list
+	list-style-type: none
+
+ul.project-desc-list li:before
+	content: '\2014'
+	position: absolute
+	margin-left: -20px
+
+//stock image from https://static.pexels.com/photos/162557/architecture-construction-build-building-162557.jpeg
+.company-promise-container
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/construction4.jpg")
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
+	background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	margin-bottom: 10vh
+
+.company-promise-header-text
+	color: #ffffff
+	text-align: center
+	font-weight: bolder
+	margin: auto
+	border-bottom: 2px solid #00b454
+	padding-bottom: 2vh
+	margin-bottom: 2vh
+
+.company-promise-content
+	text-align: center
+	color: #ffffff
+	font-size: 1em
+
+.header-text-careers
+	text-align: center
+	margin-top: 10vh
+	width: 40%
+	border-bottom: 2px solid #00b454
+	padding: auto
+	padding-bottom: 2vh
+	margin: auto
+	margin-bottom: 5%
+	margin-top: 5%
+
+.career-categories
+	margin-bottom: 5vh
+	text-align: center
+.career-categories div a
+	text-decoration: none
+	font-weight: bold
+	-webkit-transition: color 0.1s linear 0.25s
+	-o-transition: color 0.1s linear 0.25s
+	transition: color 0.1s linear 0.25s
+.career-categories div a:hover
+	color: #00b454
+
+.table th
+	border: none !important
+
+.table td, .table th
+	padding: 10px
+	border-top-width: 100%
+
+.table
+	margin-left: auto
+	margin-right: auto
+	
+.contact-list
+	text-align: center
+
 /* MIXINS */
 =phoneAndiPad($overlayFont, $fontText, $display)
+	/* start general */
+	.button_container span 
+		background: #a2e7c1 !important
+
+	.button_container 
+		margin-right: 20px
+
+	.overlay 
+		width: 100%
+		z-index: 1
+
+	.overlay nav 
+		font-size: $overlayFont
+		line-height: 100%
+
+	#scicLogo
+		margin-left: 15px
+
+	.header-text-container-desk, #video-bg-index-desk, a.btn, #ongoing, #civil, #power, #building, #water, #allJobs, #professionals, #graduates, #skilledCraft
+		display: none
+
+	.inactive
+		color: #303030
+
+	.active
+		color: #00b454
+
+	main
+		margin-bottom: 5vh	
+	/* end general */
+
 	/* start index page */
 	.hero-image-index-mobile
 		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/1L-blur.jpg")
@@ -49,20 +213,6 @@
 		text-align: center
 		color: #ffffff
 
-	.button_container span 
-		background: #a2e7c1 !important
-
-	.button_container 
-		margin-right: 20px
-
-	.overlay 
-		width: 100%
-		z-index: 1
-
-	.overlay nav 
-		font-size: $overlayFont
-		line-height: 100%
-
 	.index-content-mobile
 		background: rgba(229,229,229,0.5)
 		padding: 10%
@@ -85,74 +235,6 @@
 	.btn-link 
 		margin-bottom: 15px
 
-	.footer
-		color: #303030
-		position: relative
-		clear: both
-		text-align: center
-		margin-top: 10vh
-
-	/* end index page */
-
-	.rowImageMobile2
-		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/RPWSIP1-blur.JPG")
-		background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG")
-		background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG")
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG")
-		height: 40vh
-		max-width: 100%
-		width: 100vw
-		background-position: center
-		background-repeat: no-repeat
-		background-size: cover
-		position: relative
-		z-index: -99
-		margin: 0 !important
-		padding-top: 0 !important
-
-		// .imgProj
-		// 	height: 100%
-		// 	max-width: 100%
-		// 	width: 100%
-
-	.thumbnail
-		text-decoration: none
-		border: none
-		border-radius: 0
-		-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
-		-webkit-transition: 0.3s
-		-o-transition: 0.3s
-		transition: 0.3s
-
-	.thumbnail:hover
-		text-decoration: none
-		-webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
-		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
-		
-	a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover
-		border-color: transparent
-
-	div.col a img
-		height: 100%
-		max-width: 100%
-		width: 100%
-		background-position: centr
-		background-repeat: no-repeat
-		background-size: cover
-		position: relative
-		margin: 0
-
-	
-
-	.header-text-container-desk, #video-bg-index-desk, a.btn
-		display: none
-
-	hr
-		margin-bottom: 10%
-
-	
-
 	div a img
 		width: 70px
 		height: 70px
@@ -164,157 +246,79 @@
 		display: block
 		padding-left: 10px
 		color: #303030
+	/* end index page */
 
-	h1.projH1
+	/* start projects page */
+	.hero-image-project
+		height: 40vh
+
+	hr
+		margin-bottom: 10%
+
+	h1.header-text-projects
 		font-weight: 700
 		text-align: left
 		font-family: Montserrat
 		font-size: 3em
 		margin-bottom: 5vh
 
-	hr.projHR
-		border: 2px solid #00b454
-
-	#scicLogo
-		width: 2.5em
-		height: 2.5em
-		display: inline-block
-		margin-left: 15px
-		margin-top: 10px
-
-	
-
-	// .projectContainer
-	// 	background: rgba(229,229,229,0.5)
-	// 	padding: 10%
-
-
-
-	//projects
-	.projectLinks
-		margin-bottom: 5vh
-
-	.projectLinks div
-		display: inline
-		margin-right: 3vw
-
-	.projectLinks div a
-		text-decoration: none
-		font-weight: bold
-		-webkit-transition: color 0.1s linear 0.25s
-		-o-transition: color 0.1s linear 0.25s
-		transition: color 0.1s linear 0.25s
-	
-	.projectLinks div a:hover
-		color: #00b454
-
-	#ongoing, #civil, #power, #building, #water
-		display: none
-	.inactive
-		color: #303030
-	.active
-		color: #00b454
-	.rowImage3
-		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/construction4.jpg")
-		background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
-		background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
+	div.project-card a img
+		height: 100%
+		max-width: 100%
+		width: 100%
 		background-position: center
 		background-repeat: no-repeat
 		background-size: cover
-		color: #fff
-		padding: 10% 15%
-		margin-bottom: 10vh
+		position: relative
+		margin: 0
 
-	.projH3
-		color: #ffffff
-		text-align: center
-		font-weight: bolder
+	.thumbnail
+		text-decoration: none
+		-webkit-transition: 0.3s
+		-o-transition: 0.3s
+		transition: 0.3s
+
+	.company-promise-container
+		padding: 10% 15%		
+
+	.company-promise-header-text
 		width: 40%
-		margin: auto
-		border-bottom: 2px solid #00b454
-		padding-bottom: 2vh
-		margin-bottom: 2vh
 
-	.companyPromise
-		text-align: center
-		color: #ffffff
-		font-size: 1em
+	/* end projects page */
 
-	main
-		margin-bottom: 5vh		
-		
-	.main-gallery
-		background: #fff
-		-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
-		box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25)
-
-	.gallery-cell
-		width: 100%
-
-	.testimonial
-		text-align: center
-		max-width: 850px
-		margin: 0 auto 10vh auto
-		padding: 0 20px
-
-	.testimonial-avatar
-		width: 100px
-		border-radius: 50%
-
-	.testimonial-quote
-		display: block
-		font-size: 24px
-		font-weight: 300
-		padding: 10px 0
-	.testimonial-author
-		display: block
-		font-weight: 800
-		color: #00b454
-	.flickity-page-dots
-		bottom: 25px
-
-	.dot.is-selected
-		background: #00b454 !important
-
-	hr.projHR4
-		border: 0.5px solid rgba(48,48,48,0.5)
-
-	ul.noteList
-		list-style-type: none
-
-	ul.noteList li:before
-		content: '\2014'
-		position: absolute
-		margin-left: -20px
-
-	h1.projH5
-		text-align: center
-		margin-top: 10vh
-
-	hr.projHR5
-		border: 2px solid #00b454
-		margin-bottom: 8vh
-
-	.careerLinks
-		margin-bottom: 5vh
-		text-align: center
-
-	.careerLinks div
+	/* start careers page */
+	.career-categories div
 		display: $display
 		margin-right: 4vw
 
-	.careerLinks div a
-		text-decoration: none
-		font-weight: bold
-		-webkit-transition: color 0.1s linear 0.25s
-		-o-transition: color 0.1s linear 0.25s
-		transition: color 0.1s linear 0.25s
-	
-	.careerLinks div a:hover
-		color: #00b454
+	.table
+		width: 0%
+	/* end careers page */
 
-	#allJobs, #professionals, #graduates, #skilledCraft
+=desktopAndTabLandScape($overlayFont)
+	/* start general */
+	.button_container span 
+		background: #a2e7c1 !important
+
+	.overlay 
+		width: 15%
+
+	.overlay nav 
+		font-size: $overlayFont
+		line-height: 100%
+
+	.footer2
+		color: #ffffff
+		position: absolute
+		right: 0
+		bottom: 0
+		left: 0
+		padding: 1rem
+
+	#scicLogo
+		margin-left: 10px
+
+	#header-index-mobile-container, .hero-image-index-mobile, .link-container-index-mobile, #ongoing, #civil, #power, #building, #water, #allJobs, #professionals, #graduates, #skilledCraft
 		display: none
 
 	.inactive
@@ -323,30 +327,10 @@
 	.active
 		color: #00b454
 
-	// .table td
-	// 	border-top: 1px solid #ccc
+	main
+		margin-bottom: 5vh	
+	/* end general */
 
-	.table th
-		border: none !important
-
-	.table td, .table th
-		padding: 10px
-		border-top-width: 100%
-
-	.table
-		margin-left: auto
-		margin-right: auto
-		width: 0%
-
-	.contact
-		text-align: center
-
-	.container-projects
-		margin-left: 8vw
-		margin-right: 8vw
-
-
-=desktopAndTabLandScape($overlayFont)
 	/* start index page */
 	#video-bg-index-desk
 		position: fixed
@@ -358,16 +342,6 @@
 		z-index: -100
 		-o-object-fit: cover
 		object-fit: cover
-
-	.button_container span 
-		background: #a2e7c1 !important
-
-	.overlay 
-		width: 15%
-
-	.overlay nav 
-		font-size: $overlayFont
-		line-height: 100%
 
 	.header-text-container-desk
 		margin-bottom: 5vh
@@ -425,218 +399,65 @@
 		color: #00b454
 		background: transparent
 		border: #00b454 1px solid
-
-	.footer
-		color: #303030
-		position: relative
-		clear: both
-		text-align: center
-		margin-top: 10vh
-
-	.footer2
-		color: #ffffff
-		position: absolute
-		right: 0
-		bottom: 0
-		left: 0
-		padding: 1rem
 	/* end index page */
 
-	.rowImageMobile2
-		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/RPWSIP1-blur.JPG")
-		background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG")
-		background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG")
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/RPWSIP1-blur.JPG")
+	/* start projects page */
+	.hero-image-project
 		height: 45vh
-		max-width: 100%
-		width: 100vw
-		background-position: center
-		background-repeat: no-repeat
-		background-size: cover
-		position: relative
-		z-index: -99
-		margin: 0
-		padding: 0	
 
-	#scicLogo
-		width: 2.5em
-		height: 2.5em
-		display: inline-block
-		margin-left: 10px
-		margin-top: 10px
-
-	.thumbnail
-		border-radius: 0
-		-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2)
-		box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2)
-		-webkit-transition: top 0.3s linear 0.25s
-		-o-transition: top 0.3s linear 0.25s
-		transition: top 0.3s linear 0.25s
-		border: none
-
-	.thumbnail:hover 
-		text-decoration: none
-		-webkit-box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2)
-		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2)
-		top: -10px
-		position: relative
-
-
-	a.thumbnail.active, a.thumbnail:focus, a.thumbnail:hover
-		border-color: transparent
-
-	h1.projH1
+	h1.header-text-projects
 		font-weight: 700
 		text-align: left
 		font-family: Montserrat
 		font-size: 70px
-		margin-bottom: 5vh	
-
-	#header-index-mobile-container, .hero-image-index-mobile, .link-container-index-mobile
-		display: none
-
-	.projectLinks
 		margin-bottom: 5vh
 
-	.projectLinks div
-		display: inline
-		margin-right: 3vw
+	.thumbnail
+		-webkit-transition: top 0.3s linear 0.25s
+		-o-transition: top 0.3s linear 0.25s
+		transition: top 0.3s linear 0.25s
 
-	.projectLinks div a
-		text-decoration: none
-		font-weight: bold
-		-webkit-transition: color 0.1s linear 0.25s
-		-o-transition: color 0.1s linear 0.25s
-		transition: color 0.1s linear 0.25s
-	
-	.projectLinks div a:hover
-		color: #00b454
-
-	#ongoing, #civil, #power, #building, #water
-		display: none
-	.inactive
-		color: #303030
-	.active
-		color: #00b454
-
-	
-	//stock image from https://static.pexels.com/photos/162557/architecture-construction-build-building-162557.jpeg
-	.rowImage3
-		background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("../img/construction4.jpg")
-		background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
-		background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
-		background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/construction4.jpg")
-		background-position: center
-		background-repeat: no-repeat
-		background-size: cover
+	.thumbnail:hover 
+		top: -10px
 		position: relative
-		max-width: 100%
-		width: 100vw
-		margin-bottom: 10vh
-		padding: 5%
-
-	.projH3
-		color: #ffffff
-		text-align: center
-		font-weight: bolder
-		width: 30%
-		margin: auto
-		border-bottom: 2px solid #00b454
-		padding-bottom: 2vh
-		margin-bottom: 2vh
-
-	.companyPromise
-		text-align: center
-		color: #ffffff
-		font-size: 1em
-		font-weight: 300
-
-	main
-		margin-bottom: 5vh	
-
-	hr.projHR4
-		border: 0.5px solid rgba(48,48,48,0.5)
-
-	ul.noteList
-		list-style-type: none
-
-	ul.noteList li:before
-		content: '\2014'
-		position: absolute
-		margin-left: -20px
-
-	h1.projH5
-		text-align: center
-		margin-top: 10vh
-
-	hr.projHR5
-		border: 2px solid #00b454
-		margin-bottom: 7vh
-
-	.careerLinks
-		margin-bottom: 5vh
-		text-align: center
-
-	.careerLinks div
-		display: inline
-		margin-right: 3vw
-
-	.careerLinks div a
-		text-decoration: none
-		font-weight: bold
-		-webkit-transition: color 0.1s linear 0.25s
-		-o-transition: color 0.1s linear 0.25s
-		transition: color 0.1s linear 0.25s
-	
-	.careerLinks div a:hover
-		color: #00b454
-
-	#allJobs, #professionals, #graduates, #skilledCraft
-		display: none
-
-	.inactive
-		color: #303030
-
-	.active
-		color: #00b454
-
-	// .table td
-	// 	border-top: 1px solid #ccc
-
-	.table th
-		border: none !important
-
-	.table td, .table th
-		padding: 10px
-		border-top-width: 100%
-
-	.table
-		margin-left: auto
-		margin-right: auto
-		width: calc(100% / 3)
-
-	.contact
-		text-align: center
 
 	img.civilImage, img.powerImage
 		height: 40vh
 		width: 100%
 
-	.projectRow
+	.project-gallery
 		display: flex
 		flex-flow: row wrap
 		justify-content: space-around		
 		box-sizing: border-box
 
-	.container-projects
-		margin-left: 8vw
-		margin-right: 8vw
-
-	.col
+	.project-card
 		width: 400px
 
 	.flex-dummy
 		display: hidden
+
+	.company-promise-container
+		position: relative
+		max-width: 100%
+		width: 100vw
+		padding: 5%
+
+	.company-promise-header-text
+		width: 30%
+
+	.company-promise-content
+		font-weight: 300
+	/* end projects page */	
+
+	/* start careers page */
+	.career-categories div
+		display: inline
+		margin-right: 3vw
+
+	.table
+		width: calc(100% / 2)
+	/* end careers page */	
 
 /* MEDIA QUERY */
 
