@@ -5,6 +5,13 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
 	if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
 		document.getElementById("btn-to-top").style.display = "block";
+		document.getElementById("btn-to-top").style.background = "rgba(48,48,48,0.3)";
+		if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+			document.getElementById("btn-to-top").style.background = "rgba(48,48,48,0.5)";
+			if (document.body.scrollTop > 950 || document.documentElement.scrollTop > 950) {
+				document.getElementById("btn-to-top").style.background = "rgba(48,48,48,0.7)";	
+			}	
+		}
 	} else {
 		document.getElementById("btn-to-top").style.display = "none";
 	}
