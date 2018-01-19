@@ -1,0 +1,32 @@
+<% include ../partials/header %>
+<nav class="navbar">
+	<div class="navbar-header" >
+		<a class="navbar-brand" href="/"><img id="scicLogo" src="../img/scic_logo.png"/>
+		</a>
+	</div>
+	<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+</nav>
+<div class="container-projects">
+	<h1 class="header-text-form">Post an e-Learning Article</h1>
+	<div class="project-form-container">
+		<form action="/elearnings" method="POST" enctype="multipart/form-data">
+			<div class="form-group">
+				<input class="form-control" type="text" placeholder="Article Title" name="title" required="required">			
+			</div>
+			<div class="form-group">
+				<label for="file">PDF (Max 5MB) | Image (Max 1MB)</label>
+				<input type="file" id="file" name="file" accept="file/*" required="required" multiple>
+			</div>
+			<div class="form-group">
+				<textarea name="description" class="form-control" placeholder="Description" required="required" rows="10"></textarea>
+			</div>
+			
+			<div class="form-group">
+				<button class="btn btn-lg btn-primary btn-block">SUBMIT</button>
+			</div>
+			
+		</form>
+		<div class="projects-link"><a href="/elearnings">View e-Learnings</a></div>
+	</div>
+</div>
+<% include ../partials/footer %>

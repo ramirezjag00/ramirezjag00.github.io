@@ -1,0 +1,47 @@
+<% include ../partials/header %>
+<nav class="navbar">
+	<div class="navbar-header" >
+		<a class="navbar-brand" href="/"><img id="scicLogo" src="../img/scic_logo.png"/>
+		</a>
+	</div>
+	<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+</nav>
+<div class="container-projects">
+	<h1 class="header-text-form">Post a new project</h1>
+	<div class="project-form-container">
+		<form action="/projects" method="POST" enctype="multipart/form-data">
+			<div class="form-group">
+				<input class="form-control" type="text" placeholder="project name" name="name" required="required">			
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" placeholder="project location" name="location" required="required">			
+			</div>
+			<div class="form-group">
+				<select class="form-control" name="category">
+					<option selected="selected">Select Category</option>
+					<option value="plant">Plant</option>
+					<option value="civil">Civil</option>
+					<option value="building">Building</option>
+					<option value="underground">Underground</option>
+				</select>	
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="" placeholder="year" name="year" required="required">	
+			</div>
+			<div class="form-group">
+				<label for="image">Image (Max 1MB, Image and Thumbnail)</label>
+				<input type="file" id="image" name="image" accept="image/*" required="required" multiple>
+			</div>
+			<div class="form-group">
+				<textarea name="description" class="form-control" placeholder="Project Description" required="required" rows="10"></textarea>
+			</div>
+			
+			<div class="form-group">
+				<button class="btn btn-lg btn-primary btn-block">SUBMIT</button>
+			</div>
+			
+		</form>
+		<div class="projects-link"><a href="/projects">View Projects</a></div>
+	</div>
+</div>
+<% include ../partials/footer %>

@@ -1,0 +1,173 @@
+<% include ../partials/header %>
+<nav class="navbar">
+	<div class="navbar-header" >
+		<a class="navbar-brand" href="/"><img id="scicLogo" src="../img/scic_logo.png"/>
+		</a>
+		<div class="hero-image-project">
+		</div>
+	</div>
+	<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+</nav>
+<hr>
+<main>
+	<div class="container-projects">
+		<h1 class="header-text-projects" id="projects">Projects</h1>
+		<div class="project-categories">
+			<div><a href="#projects" class="proj1 button-proj inactive">Plant</a></div>
+			<div><a href="#projects" class="proj2 button-proj inactive">Civil</a></div>
+			<div><a href="#projects" class="proj3 button-proj inactive">Building</a></div>
+			<div><a href="#projects" class="proj4 button-proj inactive">Underground</a></div>
+			<% if(currentUser) { %>
+			<div><a href="projects/new" class="button-proj inactive">New Project</a></div>
+			<% } %>
+		</div>
+
+		<div id="plant">
+			<div class="project-gallery">
+				
+				<% projects.forEach(function(project){%>
+				<% if(project.category === "plant") { %>
+				<div class="project-card">
+					<a href="/uploads/<%=project.image[1]%>" class='thumbnail plantSetLink' id="lightbox-img" data-lightbox="plantSet" data-title="<%= project.description%>">
+						<img src="/uploads/<%=project.image[0]%>" class="plantImage" alt="<%= project.name%>" title="<%= project.name%>">
+					</a>
+					<ul class="project-desc-list">
+						<li><%= project.name%></li>
+						<li><%= project.location%></li>
+						<li><%= project.year%></li>
+						<% if(currentUser) { %>
+						<form class="delete-form" action="/projects/<%=project._id%>?_method=DELETE" method="POST">
+							<li><button class="btn btn-xs btn-danger">Delete</button>
+							</form></li>
+							<% } %>
+						</ul>
+					</div>
+					<% } %>
+					<% }); %>
+					
+					<!-- since justify-content:space-evenly is still experimental we used space-around instead and here is a work around. add fill dummies here in display: hidden;. number is depending on possible col minus 1 ... 5 cols for 4kres minus 1 = 4-->
+					<div class="project-card flex-dummy">
+					</div>
+					<div class="project-card flex-dummy">
+					</div>
+					<div class="project-card flex-dummy">
+					</div>
+					<div class="project-card flex-dummy">
+					</div>
+				</div>
+				<br />
+			</div>
+		<div id="civil">
+			<div class="project-gallery">
+				
+				<% projects.forEach(function(project){%>
+				<% if(project.category === "civil"){ %>
+				<div class="project-card">
+					<a href="/uploads/<%=project.image[1]%>" class='thumbnail civilSetLink' id="lightbox-img" data-lightbox="civilSet" data-title="<%= project.description%>">
+						<img src="/uploads/<%=project.image[0]%>" class="civilImage" alt="<%= project.name%>" title="<%= project.name%>">
+					</a>
+					<ul class="project-desc-list">
+						<li><%= project.name%></li>
+						<li><%= project.location%></li>
+						<li><%= project.year%></li>
+						<% if(currentUser) { %>
+						<form class="delete-form" action="/projects/<%=project._id%>?_method=DELETE" method="POST">
+							<li><button class="btn btn-xs btn-danger">Delete</button>
+							</form></li>
+							<% } %>
+						</ul>
+				</div>
+				<% } %>
+					<% }); %>
+					
+					<!-- since justify-content:space-evenly is still experimental we used space-around instead and here is a work around. add fill dummies here in display: hidden;. number is depending on possible col minus 1 ... 5 cols for 4kres minus 1 = 4-->
+					<div class="project-card flex-dummy">
+					</div>
+					<div class="project-card flex-dummy">
+					</div>
+					<div class="project-card flex-dummy">
+					</div>
+					<div class="project-card flex-dummy">
+					</div>
+			</div>
+				<br />
+		</div>
+		<div id="building">
+				<div class="project-gallery">
+					
+					<% projects.forEach(function(project){%>
+					<% if(project.category === "building"){ %>
+					<div class="project-card">
+						<a href="/uploads/<%=project.image[1]%>" class='thumbnail buildingSetLink' id="lightbox-img" data-lightbox="buildingSet" data-title="<%= project.description%>">
+							<img src="/uploads/<%=project.image[0]%>" class="buildingImage" alt="<%= project.name%>" title="<%= project.name%>">
+						</a>
+						<ul class="project-desc-list">
+							<li><%= project.name%></li>
+							<li><%= project.location%></li>
+							<li><%= project.year%></li>
+							<% if(currentUser) { %>
+							<form class="delete-form" action="/projects/<%=project._id%>?_method=DELETE" method="POST">
+								<li><button class="btn btn-xs btn-danger">Delete</button>
+								</form></li>
+								<% } %>
+							</ul>
+					</div>
+						<% } %>
+						<% }); %>
+						
+						<!-- since justify-content:space-evenly is still experimental we used space-around instead and here is a work around. add fill dummies here in display: hidden;. number is depending on possible col minus 1 ... 5 cols for 4kres minus 1 = 4-->
+						<div class="project-card flex-dummy">
+						</div>
+						<div class="project-card flex-dummy">
+						</div>
+						<div class="project-card flex-dummy">
+						</div>
+						<div class="project-card flex-dummy">
+						</div>
+					</div>
+					<br />
+		</div>
+		<div id="underground">
+			<div class="project-gallery">
+				<% projects.forEach(function(project){%>
+				<% if(project.category === "underground"){ %>
+				<div class="project-card">
+					<a href="/uploads/<%=project.image[1]%>" class='thumbnail undergroundSetLink' id="lightbox-img" data-lightbox="undergroundSet" data-title="<%= project.description%>">
+						<img src="/uploads/<%=project.image[0]%>" class="undergroundImage" alt="<%= project.name%>" title="<%= project.name%>">
+					</a>
+					<ul class="project-desc-list">
+						<li><%= project.name%></li>
+						<li><%= project.location%></li>
+						<li><%= project.year%></li>
+						<% if(currentUser) { %>
+						<form class="delete-form" action="/projects/<%=project._id%>?_method=DELETE" method="POST">
+							<li><button class="btn btn-xs btn-danger">Delete</button>
+							</form></li>
+							<% } %>
+						</ul>
+					</div>
+					<% } %>
+					<% }); %>
+					
+					<!-- since justify-content:space-evenly is still experimental we used space-around instead and here is a work around. add fill dummies here in display: hidden;. number is depending on possible col minus 1 ... 5 cols for 4kres minus 1 = 4-->
+					<div class="project-card flex-dummy">
+					</div>
+					<div class="project-card flex-dummy">
+					</div>
+					<div class="project-card flex-dummy">
+					</div>
+					<div class="project-card flex-dummy">
+					</div>
+				</div>
+				<br />
+		</div>
+						<div class="project-container"></div>
+					</div>
+				</main>
+				<div class="company-promise-container">
+					<h2 class="company-promise-header-text">The Company Promise</h2>
+					<p class="company-promise-content">Sta. Clara International Corporation is your prime partner in nation-building. We will continue to deliver legacy projects with the highest standards of quality and safety believing that out works greatly contribute to the country's progress and development.</p>
+
+				</div>
+				<hr>
+				<% include ../partials/footer %>

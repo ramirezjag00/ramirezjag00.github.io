@@ -1,0 +1,49 @@
+<% include ../partials/header %>
+<nav class="navbar">
+	<div class="navbar-header" >
+		<a class="navbar-brand" href="/"><img id="scicLogo" src="../img/scic_logo.png"/>
+		</a>
+	</div>
+	<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+</nav>
+<div class="container-projects">
+	<h1 class="header-text-form">Post a career opportunity</h1>
+	<div class="project-form-container">
+		<form action="/careers" method="POST">
+			<div class="form-group">
+				<input class="form-control" type="text" placeholder="Job Title" name="jobtitle" required="required">			
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" placeholder="Department" name="department" required="required">
+			</div>
+			
+			<div class="form-group">
+				<input class="form-control" type="text" placeholder="Location" name="location" required="required">	
+			</div>
+
+			<div class="form-group">
+				<select class="form-control" name="category">
+					<option selected="selected">Select Category</option>
+					<option value="professionals">Professionals</option>
+					<option value="graduates">Gradudates</option>
+					<option value="skilledCraft">Skilled Craft</option>
+				</select>	
+			</div>
+			
+			<div class="form-group">
+				<textarea name="qualification" class="form-control" placeholder="Qualification" required="required" rows="10"></textarea>
+			</div>
+
+			<div class="form-group">
+				<textarea name="jobdescription" class="form-control" placeholder="Job Description" required="required" rows="10"></textarea>
+			</div>
+			
+			<div class="form-group">
+				<button class="btn btn-lg btn-primary btn-block">SUBMIT</button>
+			</div>
+			
+		</form>
+		<div class="projects-link"><a href="/careers">View Careers</a></div>
+	</div>
+</div>
+<% include ../partials/footer %>

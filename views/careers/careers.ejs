@@ -1,0 +1,113 @@
+<% include ../partials/header %>
+	<nav class="navbar">
+		<div class="navbar-header" >
+			<a class="navbar-brand" href="/"><img id="scicLogo" src="../img/scic_logo.png"/>
+			</a>
+		</div>
+		<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+	</nav>
+	<main>
+		<div class="container-careers">
+			<h1 class="header-text-careers" id="careers">Careers</h1>
+			<div class="career-categories">
+				<div><a href="#careers" class="career1 button-car inactive">All Jobs</a></div>
+				<div><a href="#careers" class="career2 button-car inactive">Professionals</a></div>
+				<div><a href="#careers" class="career3 button-car inactive">Graduates</a></div>
+				<div><a href="#careers" class="career4 button-car inactive">Skilled Craft</a></div>
+				<% if(currentUser) { %>
+				<div><a href="careers/new" class="button-car inactive">New Career</a></div>
+				<% } %>
+				</div>
+			<div id="allJobs">
+				<table class="table">
+					<col width="400">
+					<tr>
+						<th>Job Title</th>
+						<th>Department</th>
+						<th>Location</th>
+					</tr>
+					<% careers.forEach(function(career){%>
+					<% if(career.listCategory === "allJobs") { %>
+					<tr>
+						<td><a href="/careers/<%= career._id %>" class="career-id-link"><%=career.jobtitle%></a></td>
+						<td><%=career.department%></td>
+						<td><%=career.location%></td>
+						
+					</tr>
+					<% } %>
+					<% }); %>
+				</table>
+			</div>
+			<div id="professionals">
+				<table class="table">
+					<col width="400">
+					<tr>
+						<th>Job Title</th>
+						<th>Department</th>
+						<th>Location</th>
+					</tr>
+					<% careers.forEach(function(career){%>
+					<% if(career.category === "professionals") { %>
+					<tr>
+						<td><a href="/careers/<%= career._id %>" class="career-id-link"><%=career.jobtitle%></a></td>
+						<td><%=career.department%></td>
+						<td><%=career.location%></td>
+					</tr>
+					<% } %>
+					<% }); %>
+				</table>
+			</div>
+			<div id="graduates">
+				<table class="table">
+					<col width="400">
+					<tr>
+						<th>Job Title</th>
+						<th>Department</th>
+						<th>Location</th>
+					</tr>
+					<% careers.forEach(function(career){%>
+					<% if(career.category === "graduates") { %>
+					<tr>
+						<td><a href="/careers/<%= career._id %>" class="career-id-link"><%=career.jobtitle%></a></td>
+						<td><%=career.department%></td>
+						<td><%=career.location%></td>
+					</tr>
+					<% } %>
+					<% }); %>
+				</table>
+			</div>
+			<div id="skilledCraft">
+				<table class="table">
+					<col width="400">
+					<tr>
+						<th>Job Title</th>
+						<th>Department</th>
+						<th>Location</th>
+					</tr>
+					<% careers.forEach(function(career){%>
+					<% if(career.category === "skilledCraft") { %>
+					<tr>
+						<td><a href="/careers/<%= career._id %>" class="career-id-link"><%=career.jobtitle%></a></td>
+						<td><%=career.department%></td>
+						<td><%=career.location%></td>
+					</tr>
+					<% } %>
+					<% }); %>
+				</table>
+			</div>
+			<div class="career-container"></div>
+			<h1 class="header-text-careers">Contact Us</h1>
+			<div class="contact-list" id="contacts">
+				<div>
+					<i class="fa fa-map-marker" aria-hidden="true"></i> Highway 54 Plaza, 986 EDSA Wack-Wack, Mandaluyong City, PH
+				</div>
+				<div>
+					<i class="fa fa-phone" aria-hidden="true"></i> (02) 706 5156 | (02) 706 5158
+				</div>
+				<div>
+					<i class="fa fa-envelope" aria-hidden="true"></i> careers@staclara.com.ph
+				</div>
+			</div>
+		</div>
+	</main>
+	<% include ../partials/footer %>

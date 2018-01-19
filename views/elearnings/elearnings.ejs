@@ -1,0 +1,38 @@
+<% include ../partials/header %>
+
+<nav class="navbar">
+	<div class="navbar-header" >
+		<a class="navbar-brand" href="/"><img id="scicLogo" src="../img/scic_logo.png"/>
+		</a>
+	</div>
+	<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+</nav>
+<main>
+<div class="container-elearnings">
+	<h1 class="header-text-form">e-Learning</h1>
+
+	<% if(currentUser) { %>
+				<div class="projects-link"><a href="elearnings/new">New Article</a></div>
+				<% } %>
+
+	
+	<% elearnings.reverse().forEach(function(elearning){ %>
+	<div class="elearning-article-container">
+		<div class="elearning-title"><%= elearning.title%></div>
+		<div class="elearning-date"><%= elearning.date.toDateString()%></div>
+		<div class="elearning-image-container"><img src="/uploads/<%= elearning.file[1]%>" class="elearning-image"></div>
+		<div class="elearning-description"><%= elearning.description%></div>
+		<% if(currentUser) { %>
+		<form class="delete-form" action="/elearnings/<%=elearning._id%>?_method=DELETE" method="POST">
+			<div><button class="btn btn-xs btn-danger delete-button">Delete</button>
+			</form></div>
+			<% } %>
+		<div class="elearning-article"><a href="/uploads/<%=elearning.file[0]%>">Continue Reading...</a></div>
+		<hr class="elearning-hr">
+		</div>
+	<% }); %>
+	
+
+</div>
+</main>
+<% include ../partials/footer %>

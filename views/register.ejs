@@ -1,0 +1,37 @@
+<% include ./partials/header %>
+<nav class="navbar">
+	<div class="navbar-header" >
+		<a class="navbar-brand" href="/"><img id="scicLogo" src="../img/scic_logo.png"/>
+		</a>
+	</div>
+	<div class="button_container" id="toggle"><span class="top"></span><span class="middle"></span><span class="bottom"></span></div>
+</nav>
+<div class="container-projects">
+	<h1 class="header-text-form">Create an SCIC Account</h1>
+	<div class="project-form-container">
+		<form action="/register" method="POST">
+			<div class="form-group">
+				<input class="form-control" type="text" name="name" placeholder="name" required="required">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="text" name="username" placeholder="username" required="required">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="password" name="password" placeholder="password" required="required">
+			</div>
+			<div class="form-group">
+				<input class="form-control" type="password" name="adminCode" placeholder="admin code" required="required">
+			</div>
+			<div class="form-group">
+				<button class="btn btn-lg btn-success btn-block">CREATE ACCOUNT</button>
+			</div>
+			<div class="form-group">
+				<p>Want to create an account? Contact IT Helpdesk</p>
+			</div>
+			<div class="form-group">
+				<p><a href="/login">Sign In</a></p>
+			</div>
+		</form>
+	</div>	
+</div>
+<% include ./partials/footer %>

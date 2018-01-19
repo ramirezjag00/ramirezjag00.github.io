@@ -113,7 +113,6 @@ ul.project-desc-list li:before
 .header-text-careers
 	text-align: center
 	margin-top: 10vh
-	width: 40%
 	border-bottom: 2px solid #00b454
 	padding: auto
 	padding-bottom: 2vh
@@ -148,10 +147,118 @@ ul.project-desc-list li:before
 	text-align: center
 
 .footer-top-hr
-		border: 0.5px solid rgba(48,48,48,0.5)
+	border: 0.5px solid rgba(48,48,48,0.5)
+
+.project-form-container
+	width: 60%
+	margin: 25px auto
+
+.header-text-form
+	font-weight: 700
+	text-align: left
+	font-family: Montserrat
+	font-size: 3em
+	margin-bottom: 5vh
+	text-align: center
+
+.projects-link
+	text-align: center
+	margin-bottom: 3vh
+
+.projects-link a
+	text-decoration: none
+	color: #303030
+	font-weight: bold
+
+.projects-link a:hover
+	color: #00b454
+
+.career-id-link
+	color: #303030
+
+.career-id-link:hover
+	text-decoration: none
+	color: #00b454
+
+pre
+	overflow: hidden
+	border: none
+	font-family: Montserrat
+	background-color: #ffffff
+
+.label
+	color: #303030
+	font-weight: bold
+	font-size: 1.25em
+
+.container-career
+	text-align: center
+
+.label-content
+	margin-bottom: 3vh
+
+.elearning-title
+	font-size: 2em
+	font-weight: bold
+	margin-bottom: 3vh
+
+.elearning-date
+	margin-bottom: 3vh
+	font-family: Montserrat
+
+.elearning-description
+	margin-bottom: 3vh
+
+.elearning-article a
+	text-decoration: none
+	color: #303030
+	font-weight: bold
+
+.elearning-article a:hover
+	color: #00b454
+
+.delete-button
+	margin-bottom: 3vh
+
+.elearning-article-container
+	margin-top: 3vh
+	margin-bottom: 13vh
+	border-bottom: 1px solid #303030
+
+.elearning-image
+	background-size: cover
+	height: 30vh
+	width: 100%
+
+.elearning-image-container
+	margin-bottom: 3vh
+
+.container-elearnings
+	margin-left: 20vw
+	margin-right: 20vw
+
+.header-text-certificate
+	font-weight: bold
+	font-family: Montserrat
+	font-size: 2.5em
+	margin-bottom: 2vh
+
+.container-certificate
+	margin-left: 8vw
+	margin-right: 8vw
+	text-align: center
+
+.content-certificate
+	text-align: left
+	margin-top: 5vh
+	margin-bottom: 8vh
+
+.certificate-mark img
+	height: 300px
+	width: auto
 
 /* MIXINS */
-=phoneAndiPad($overlayFont, $fontText, $display)
+=phoneAndiPad($overlayFont, $fontText, $display, $border-bottom-width)
 	/* start general */
 	.button_container span 
 		background: #a2e7c1 !important
@@ -161,7 +268,7 @@ ul.project-desc-list li:before
 
 	.overlay 
 		width: 100%
-		z-index: 1
+		z-index: 100
 
 	.overlay nav 
 		font-size: $overlayFont
@@ -170,7 +277,7 @@ ul.project-desc-list li:before
 	#scicLogo
 		margin-left: 15px
 
-	.header-text-container-desk, #video-bg-index-desk, a.btn, #ongoing, #civil, #power, #building, #water, #allJobs, #professionals, #graduates, #skilledCraft
+	.header-text-container-desk, #video-bg-index-desk, a.btn, #plant, #civil, #underground, #building, #allJobs, #professionals, #graduates, #skilledCraft
 		display: none
 
 	.inactive
@@ -296,9 +403,22 @@ ul.project-desc-list li:before
 
 	.table
 		width: 0%
+
+	.header-text-careers
+		width: $border-bottom-width
 	/* end careers page */
 
-=desktopAndTabLandScape($overlayFont)
+	div.certificate-card a img
+		height: 100%
+		max-width: 100%
+		width: 100%
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover
+		position: relative
+		margin: 0
+
+=desktopAndTabLandScape($overlayFont, $border-bottom-width, $header-text)
 	/* start general */
 	.button_container span 
 		background: #a2e7c1 !important
@@ -321,7 +441,7 @@ ul.project-desc-list li:before
 	#scicLogo
 		margin-left: 10px
 
-	#header-index-mobile-container, .hero-image-index-mobile, .link-container-index-mobile, #ongoing, #civil, #power, #building, #water, #allJobs, #professionals, #graduates, #skilledCraft
+	#header-index-mobile-container, .hero-image-index-mobile, .link-container-index-mobile, #plant, #civil, #underground, #building, #allJobs, #professionals, #graduates, #skilledCraft
 		display: none
 
 	.inactive
@@ -350,7 +470,7 @@ ul.project-desc-list li:before
 		margin-bottom: 5vh
 
 	.header-text
-		font: 2.5em Raleway, sans-serif
+		font: $header-text Raleway, sans-serif
 		color: #fff
 		font-style: light
 		display: -webkit-box
@@ -424,7 +544,7 @@ ul.project-desc-list li:before
 		top: -10px
 		position: relative
 
-	img.civilImage, img.powerImage
+	img.civilImage, img.plantImage, img.buildingImage, img.undergroundImage
 		height: 40vh
 		width: 100%
 
@@ -460,31 +580,37 @@ ul.project-desc-list li:before
 
 	.table
 		width: calc(100% / 2)
-	/* end careers page */	
+
+	.header-text-careers
+		width: $border-bottom-width
+	/* end careers page */
+
+	.certificate-card
+		width: 300px
 
 /* MEDIA QUERY */
 
 @media only screen and (max-width: 767px)
-	+phoneAndiPad(2em, 1.5em, block)
+	+phoneAndiPad(2em, 1.5em, block, 40%)
 	
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
-	+phoneAndiPad(3em, 2.5em, inline)
+	+phoneAndiPad(3em, 2.5em, inline, 30%)
 
 @media only screen and (min-width: 800px) and (orientation: portrait)
-	+phoneAndiPad(5em, 2.5em, inline)
+	+phoneAndiPad(5em, 2.5em, inline, 30%)
 
 @media only screen and (min-width: 1280px) and (orientation: landscape)
-	+desktopAndTabLandScape(1.5em)
+	+desktopAndTabLandScape(1em, 20%, 3em)
 	#btn-to-top
 		display: none
 
 @media only screen and (min-width: 1025px)
-	+desktopAndTabLandScape(2em)
+	+desktopAndTabLandScape(1.5em, 15%, 3em)
 	#btn-to-top
 		display: none
 
 @media only screen and (min-width: 2048px)
-	+desktopAndTabLandScape(2em)
+	+desktopAndTabLandScape(2em, 10%, 4.5em)
 	.header-text-container-desk
 		margin-top: 10em
 
